@@ -1,35 +1,19 @@
-// Layout racine de l'application Next.js
 import type { Metadata } from "next";
 import "./globals.css";
-import Navbar from "@/components/layout/Navbar";
-import Footer from "@/components/layout/Footer";
 
 export const metadata: Metadata = {
   title: {
-    default: "FormaFind - La marketplace de la formation",
-    template: "%s | FormaFind",
+    default: "GMAO Hospitalière",
+    template: "%s | GMAO Hospitalière",
   },
   description:
-    "Trouvez et comparez facilement les meilleures formations professionnelles : informatique, langues, commerce et plus. Avis vérifiés, prix transparents.",
-  keywords: ["formation professionnelle", "école", "cours", "certification", "reconversion"],
-  openGraph: {
-    type: "website",
-    siteName: "FormaFind",
-  },
+    "Gestion de maintenance assistée par ordinateur pour établissements hospitaliers : équipements biomédicaux, interventions, contrats, documents et assistant IA.",
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="fr">
-      <body>
-        <Navbar />
-        <main className="min-h-[calc(100vh-64px)]">{children}</main>
-        <Footer />
-      </body>
+      <body>{children}</body>
     </html>
   );
 }
