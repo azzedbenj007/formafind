@@ -1,4 +1,4 @@
-import { Plus } from "lucide-react";
+import { Download, Plus } from "lucide-react";
 import { createServerSupabaseClient } from "@/lib/supabase-server";
 import { getCurrentProfile } from "@/lib/auth";
 import { peutCreerIntervention } from "@/lib/permissions";
@@ -48,12 +48,21 @@ export default async function InterventionsPage({ searchParams }: { searchParams
           <h1 className="text-xl font-semibold text-gray-900">Interventions</h1>
           <p className="text-sm text-gray-500">Ordres de travail préventifs et correctifs.</p>
         </div>
-        {peutCreerIntervention(profile?.role) && (
-          <Bouton href="/interventions/nouvelle">
-            <Plus className="h-4 w-4" />
-            Nouvelle intervention
-          </Bouton>
-        )}
+        <div className="flex shrink-0 gap-2">
+          <a
+            href={`/api/export/interventions?${new URLSearchParams(params as Record<string, string>).toString()}`}
+            className="inline-flex items-center justify-center gap-2 rounded-lg border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50"
+          >
+            <Download className="h-4 w-4" />
+            Exporter
+          </a>
+          {peutCreerIntervention(profile?.role) && (
+            <Bouton href="/interventions/nouvelle">
+              <Plus className="h-4 w-4" />
+              Nouvelle intervention
+            </Bouton>
+          )}
+        </div>
       </div>
 
       <FiltresInterventions />

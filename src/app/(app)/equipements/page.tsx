@@ -1,4 +1,4 @@
-import { Plus, Wrench } from "lucide-react";
+import { Download, Plus, Wrench } from "lucide-react";
 import { createServerSupabaseClient } from "@/lib/supabase-server";
 import { obtenirCategories, obtenirServices } from "@/lib/reference-data";
 import { getCurrentProfile } from "@/lib/auth";
@@ -44,12 +44,21 @@ export default async function EquipementsPage({ searchParams }: { searchParams: 
           <h1 className="text-xl font-semibold text-gray-900">Équipements</h1>
           <p className="text-sm text-gray-500">Parc biomédical et technique de l&apos;établissement.</p>
         </div>
-        {peutGererReferentiels(profile?.role) && (
-          <Bouton href="/equipements/nouveau">
-            <Plus className="h-4 w-4" />
-            Nouvel équipement
-          </Bouton>
-        )}
+        <div className="flex shrink-0 gap-2">
+          <a
+            href={`/api/export/equipements?${new URLSearchParams(params as Record<string, string>).toString()}`}
+            className="inline-flex items-center justify-center gap-2 rounded-lg border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50"
+          >
+            <Download className="h-4 w-4" />
+            Exporter
+          </a>
+          {peutGererReferentiels(profile?.role) && (
+            <Bouton href="/equipements/nouveau">
+              <Plus className="h-4 w-4" />
+              Nouvel équipement
+            </Bouton>
+          )}
+        </div>
       </div>
 
       <FiltresEquipements services={services} categories={categories} />
