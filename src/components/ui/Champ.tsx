@@ -34,16 +34,18 @@ export function Champ({
   htmlFor,
   erreur,
   requis,
+  className,
   children,
 }: {
   label: string;
   htmlFor: string;
   erreur?: string;
   requis?: boolean;
+  className?: string;
   children: React.ReactNode;
 }) {
   return (
-    <div>
+    <div className={className}>
       <Etiquette htmlFor={htmlFor}>
         {label}
         {requis && <span className="text-danger-600"> *</span>}
