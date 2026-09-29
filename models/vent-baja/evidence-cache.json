@@ -1,0 +1,3173 @@
+{
+ "top": {
+  "materialAnalysisHistory": [
+   {
+    "analysisArtifact": "/home/user/formafind/models/vent-baja/material-analysis.json",
+    "status": "proceed",
+    "unresolvedNotObservedMaterials": [],
+    "regions": 12
+   }
+  ],
+  "materialPipeline": {
+   "schemaVersion": 1,
+   "status": "proceed",
+   "registry": "/home/user/formafind/.claude/skills/img2threejs/docs/materials/material-reference.json",
+   "analysisArtifact": "/home/user/formafind/models/vent-baja/material-analysis.json",
+   "targetThreshold": 0.7,
+   "unresolvedNotObservedMaterials": [],
+   "regions": [
+    {
+     "componentId": "side-panel-l",
+     "regionId": "red-gloss",
+     "specMaterialId": "red-plastic",
+     "profileId": "plastic.glossy",
+     "status": "proceed"
+    },
+    {
+     "componentId": "silencer",
+     "regionId": "white-gloss",
+     "specMaterialId": "white-plastic",
+     "profileId": "plastic.glossy",
+     "status": "proceed"
+    },
+    {
+     "componentId": "side-panel-l",
+     "regionId": "grey-stripe",
+     "specMaterialId": "grey-plastic",
+     "profileId": "plastic.matte",
+     "status": "proceed"
+    },
+    {
+     "componentId": "seat",
+     "regionId": "seat-vinyl",
+     "specMaterialId": "seat-vinyl",
+     "profileId": "leather.matte",
+     "status": "proceed"
+    },
+    {
+     "componentId": "fork-upper-l",
+     "regionId": "gold-tube",
+     "specMaterialId": "gold-anodized",
+     "profileId": "metal.gold",
+     "status": "proceed"
+    },
+    {
+     "componentId": "tyre-rear",
+     "regionId": "rubber",
+     "specMaterialId": "tyre-rubber",
+     "profileId": "rubber.matte",
+     "status": "proceed"
+    },
+    {
+     "componentId": "swingarm-l",
+     "regionId": "black-paint",
+     "specMaterialId": "black-frame",
+     "profileId": "coating.painted-metal",
+     "status": "proceed"
+    },
+    {
+     "componentId": "shock-spring",
+     "regionId": "yellow-spring",
+     "specMaterialId": "yellow-spring",
+     "profileId": "coating.painted-metal",
+     "status": "proceed"
+    },
+    {
+     "componentId": "disc-rear",
+     "regionId": "steel-disc",
+     "specMaterialId": "brushed-steel",
+     "profileId": "metal.steel-brushed",
+     "status": "proceed"
+    },
+    {
+     "componentId": "chain",
+     "regionId": "chain-links",
+     "specMaterialId": "chain-steel",
+     "profileId": "metal.brass",
+     "status": "proceed"
+    },
+    {
+     "componentId": "silencer-cap",
+     "regionId": "carbon-cap",
+     "specMaterialId": "carbon-cap",
+     "profileId": "plastic.glossy",
+     "status": "proceed"
+    },
+    {
+     "componentId": "plate-reflector",
+     "regionId": "red-reflector",
+     "specMaterialId": "reflector-red",
+     "profileId": "plastic.glossy",
+     "status": "proceed"
+    }
+   ],
+   "controlledViewsRequired": [
+    "albedo-unlit",
+    "environment-reflection",
+    "grazing",
+    "neutral-studio",
+    "reference-beauty"
+   ]
+  },
+  "pbrExtractionHistory": [
+   {
+    "materialId": "red-plastic",
+    "confidence": 0.86,
+    "verdict": "pass",
+    "usable": true,
+    "maps": {
+     "albedo": {
+      "path": "/home/user/formafind/models/vent-baja/material-evidence/spec-red-plastic/red-plastic_albedo.png",
+      "url": "red-plastic_albedo.png",
+      "channel": "albedo",
+      "source": "reference-pixel-extraction"
+     },
+     "roughness": {
+      "path": "/home/user/formafind/models/vent-baja/material-evidence/spec-red-plastic/red-plastic_roughness.png",
+      "url": "red-plastic_roughness.png",
+      "channel": "roughness",
+      "source": "reference-pixel-extraction"
+     },
+     "height": {
+      "path": "/home/user/formafind/models/vent-baja/material-evidence/spec-red-plastic/red-plastic_height.png",
+      "url": "red-plastic_height.png",
+      "channel": "height",
+      "source": "reference-pixel-extraction"
+     },
+     "normal": {
+      "path": "/home/user/formafind/models/vent-baja/material-evidence/spec-red-plastic/red-plastic_normal.png",
+      "url": "red-plastic_normal.png",
+      "channel": "normal",
+      "source": "reference-pixel-extraction"
+     },
+     "ao": {
+      "path": "/home/user/formafind/models/vent-baja/material-evidence/spec-red-plastic/red-plastic_ao.png",
+      "url": "red-plastic_ao.png",
+      "channel": "ao",
+      "source": "reference-pixel-extraction"
+     }
+    }
+   },
+   {
+    "materialId": "grey-plastic",
+    "confidence": 0.701,
+    "verdict": "pass",
+    "usable": true,
+    "maps": {
+     "albedo": {
+      "path": "/home/user/formafind/models/vent-baja/material-evidence/spec-grey-plastic/grey-plastic_albedo.png",
+      "url": "grey-plastic_albedo.png",
+      "channel": "albedo",
+      "source": "reference-pixel-extraction"
+     },
+     "roughness": {
+      "path": "/home/user/formafind/models/vent-baja/material-evidence/spec-grey-plastic/grey-plastic_roughness.png",
+      "url": "grey-plastic_roughness.png",
+      "channel": "roughness",
+      "source": "reference-pixel-extraction"
+     },
+     "height": {
+      "path": "/home/user/formafind/models/vent-baja/material-evidence/spec-grey-plastic/grey-plastic_height.png",
+      "url": "grey-plastic_height.png",
+      "channel": "height",
+      "source": "reference-pixel-extraction"
+     },
+     "normal": {
+      "path": "/home/user/formafind/models/vent-baja/material-evidence/spec-grey-plastic/grey-plastic_normal.png",
+      "url": "grey-plastic_normal.png",
+      "channel": "normal",
+      "source": "reference-pixel-extraction"
+     },
+     "ao": {
+      "path": "/home/user/formafind/models/vent-baja/material-evidence/spec-grey-plastic/grey-plastic_ao.png",
+      "url": "grey-plastic_ao.png",
+      "channel": "ao",
+      "source": "reference-pixel-extraction"
+     }
+    }
+   },
+   {
+    "materialId": "seat-vinyl",
+    "confidence": 0.721,
+    "verdict": "pass",
+    "usable": true,
+    "maps": {
+     "albedo": {
+      "path": "/home/user/formafind/models/vent-baja/material-evidence/spec-seat-vinyl/seat-vinyl_albedo.png",
+      "url": "seat-vinyl_albedo.png",
+      "channel": "albedo",
+      "source": "reference-pixel-extraction"
+     },
+     "roughness": {
+      "path": "/home/user/formafind/models/vent-baja/material-evidence/spec-seat-vinyl/seat-vinyl_roughness.png",
+      "url": "seat-vinyl_roughness.png",
+      "channel": "roughness",
+      "source": "reference-pixel-extraction"
+     },
+     "height": {
+      "path": "/home/user/formafind/models/vent-baja/material-evidence/spec-seat-vinyl/seat-vinyl_height.png",
+      "url": "seat-vinyl_height.png",
+      "channel": "height",
+      "source": "reference-pixel-extraction"
+     },
+     "normal": {
+      "path": "/home/user/formafind/models/vent-baja/material-evidence/spec-seat-vinyl/seat-vinyl_normal.png",
+      "url": "seat-vinyl_normal.png",
+      "channel": "normal",
+      "source": "reference-pixel-extraction"
+     },
+     "ao": {
+      "path": "/home/user/formafind/models/vent-baja/material-evidence/spec-seat-vinyl/seat-vinyl_ao.png",
+      "url": "seat-vinyl_ao.png",
+      "channel": "ao",
+      "source": "reference-pixel-extraction"
+     }
+    }
+   },
+   {
+    "materialId": "gold-anodized",
+    "confidence": 0.86,
+    "verdict": "pass",
+    "usable": true,
+    "maps": {
+     "albedo": {
+      "path": "/home/user/formafind/models/vent-baja/material-evidence/spec-gold-anodized/gold-anodized_albedo.png",
+      "url": "gold-anodized_albedo.png",
+      "channel": "albedo",
+      "source": "reference-pixel-extraction"
+     },
+     "roughness": {
+      "path": "/home/user/formafind/models/vent-baja/material-evidence/spec-gold-anodized/gold-anodized_roughness.png",
+      "url": "gold-anodized_roughness.png",
+      "channel": "roughness",
+      "source": "reference-pixel-extraction"
+     },
+     "height": {
+      "path": "/home/user/formafind/models/vent-baja/material-evidence/spec-gold-anodized/gold-anodized_height.png",
+      "url": "gold-anodized_height.png",
+      "channel": "height",
+      "source": "reference-pixel-extraction"
+     },
+     "normal": {
+      "path": "/home/user/formafind/models/vent-baja/material-evidence/spec-gold-anodized/gold-anodized_normal.png",
+      "url": "gold-anodized_normal.png",
+      "channel": "normal",
+      "source": "reference-pixel-extraction"
+     },
+     "ao": {
+      "path": "/home/user/formafind/models/vent-baja/material-evidence/spec-gold-anodized/gold-anodized_ao.png",
+      "url": "gold-anodized_ao.png",
+      "channel": "ao",
+      "source": "reference-pixel-extraction"
+     }
+    }
+   },
+   {
+    "materialId": "tyre-rubber",
+    "confidence": 0.832,
+    "verdict": "pass",
+    "usable": true,
+    "maps": {
+     "albedo": {
+      "path": "/home/user/formafind/models/vent-baja/material-evidence/spec-tyre-rubber/tyre-rubber_albedo.png",
+      "url": "tyre-rubber_albedo.png",
+      "channel": "albedo",
+      "source": "reference-pixel-extraction"
+     },
+     "roughness": {
+      "path": "/home/user/formafind/models/vent-baja/material-evidence/spec-tyre-rubber/tyre-rubber_roughness.png",
+      "url": "tyre-rubber_roughness.png",
+      "channel": "roughness",
+      "source": "reference-pixel-extraction"
+     },
+     "height": {
+      "path": "/home/user/formafind/models/vent-baja/material-evidence/spec-tyre-rubber/tyre-rubber_height.png",
+      "url": "tyre-rubber_height.png",
+      "channel": "height",
+      "source": "reference-pixel-extraction"
+     },
+     "normal": {
+      "path": "/home/user/formafind/models/vent-baja/material-evidence/spec-tyre-rubber/tyre-rubber_normal.png",
+      "url": "tyre-rubber_normal.png",
+      "channel": "normal",
+      "source": "reference-pixel-extraction"
+     },
+     "ao": {
+      "path": "/home/user/formafind/models/vent-baja/material-evidence/spec-tyre-rubber/tyre-rubber_ao.png",
+      "url": "tyre-rubber_ao.png",
+      "channel": "ao",
+      "source": "reference-pixel-extraction"
+     }
+    }
+   },
+   {
+    "materialId": "black-frame",
+    "confidence": 0.782,
+    "verdict": "pass",
+    "usable": true,
+    "maps": {
+     "albedo": {
+      "path": "/home/user/formafind/models/vent-baja/material-evidence/spec-black-frame/black-frame_albedo.png",
+      "url": "black-frame_albedo.png",
+      "channel": "albedo",
+      "source": "reference-pixel-extraction"
+     },
+     "roughness": {
+      "path": "/home/user/formafind/models/vent-baja/material-evidence/spec-black-frame/black-frame_roughness.png",
+      "url": "black-frame_roughness.png",
+      "channel": "roughness",
+      "source": "reference-pixel-extraction"
+     },
+     "height": {
+      "path": "/home/user/formafind/models/vent-baja/material-evidence/spec-black-frame/black-frame_height.png",
+      "url": "black-frame_height.png",
+      "channel": "height",
+      "source": "reference-pixel-extraction"
+     },
+     "normal": {
+      "path": "/home/user/formafind/models/vent-baja/material-evidence/spec-black-frame/black-frame_normal.png",
+      "url": "black-frame_normal.png",
+      "channel": "normal",
+      "source": "reference-pixel-extraction"
+     },
+     "ao": {
+      "path": "/home/user/formafind/models/vent-baja/material-evidence/spec-black-frame/black-frame_ao.png",
+      "url": "black-frame_ao.png",
+      "channel": "ao",
+      "source": "reference-pixel-extraction"
+     }
+    }
+   },
+   {
+    "materialId": "yellow-spring",
+    "confidence": 0.86,
+    "verdict": "pass",
+    "usable": true,
+    "maps": {
+     "albedo": {
+      "path": "/home/user/formafind/models/vent-baja/material-evidence/spec-yellow-spring/yellow-spring_albedo.png",
+      "url": "yellow-spring_albedo.png",
+      "channel": "albedo",
+      "source": "reference-pixel-extraction"
+     },
+     "roughness": {
+      "path": "/home/user/formafind/models/vent-baja/material-evidence/spec-yellow-spring/yellow-spring_roughness.png",
+      "url": "yellow-spring_roughness.png",
+      "channel": "roughness",
+      "source": "reference-pixel-extraction"
+     },
+     "height": {
+      "path": "/home/user/formafind/models/vent-baja/material-evidence/spec-yellow-spring/yellow-spring_height.png",
+      "url": "yellow-spring_height.png",
+      "channel": "height",
+      "source": "reference-pixel-extraction"
+     },
+     "normal": {
+      "path": "/home/user/formafind/models/vent-baja/material-evidence/spec-yellow-spring/yellow-spring_normal.png",
+      "url": "yellow-spring_normal.png",
+      "channel": "normal",
+      "source": "reference-pixel-extraction"
+     },
+     "ao": {
+      "path": "/home/user/formafind/models/vent-baja/material-evidence/spec-yellow-spring/yellow-spring_ao.png",
+      "url": "yellow-spring_ao.png",
+      "channel": "ao",
+      "source": "reference-pixel-extraction"
+     }
+    }
+   },
+   {
+    "materialId": "brushed-steel",
+    "confidence": 0.86,
+    "verdict": "pass",
+    "usable": true,
+    "maps": {
+     "albedo": {
+      "path": "/home/user/formafind/models/vent-baja/material-evidence/spec-brushed-steel/brushed-steel_albedo.png",
+      "url": "brushed-steel_albedo.png",
+      "channel": "albedo",
+      "source": "reference-pixel-extraction"
+     },
+     "roughness": {
+      "path": "/home/user/formafind/models/vent-baja/material-evidence/spec-brushed-steel/brushed-steel_roughness.png",
+      "url": "brushed-steel_roughness.png",
+      "channel": "roughness",
+      "source": "reference-pixel-extraction"
+     },
+     "height": {
+      "path": "/home/user/formafind/models/vent-baja/material-evidence/spec-brushed-steel/brushed-steel_height.png",
+      "url": "brushed-steel_height.png",
+      "channel": "height",
+      "source": "reference-pixel-extraction"
+     },
+     "normal": {
+      "path": "/home/user/formafind/models/vent-baja/material-evidence/spec-brushed-steel/brushed-steel_normal.png",
+      "url": "brushed-steel_normal.png",
+      "channel": "normal",
+      "source": "reference-pixel-extraction"
+     },
+     "ao": {
+      "path": "/home/user/formafind/models/vent-baja/material-evidence/spec-brushed-steel/brushed-steel_ao.png",
+      "url": "brushed-steel_ao.png",
+      "channel": "ao",
+      "source": "reference-pixel-extraction"
+     }
+    }
+   },
+   {
+    "materialId": "chain-steel",
+    "confidence": 0.794,
+    "verdict": "pass",
+    "usable": true,
+    "maps": {
+     "albedo": {
+      "path": "/home/user/formafind/models/vent-baja/material-evidence/spec-chain-steel/chain-steel_albedo.png",
+      "url": "chain-steel_albedo.png",
+      "channel": "albedo",
+      "source": "reference-pixel-extraction"
+     },
+     "roughness": {
+      "path": "/home/user/formafind/models/vent-baja/material-evidence/spec-chain-steel/chain-steel_roughness.png",
+      "url": "chain-steel_roughness.png",
+      "channel": "roughness",
+      "source": "reference-pixel-extraction"
+     },
+     "height": {
+      "path": "/home/user/formafind/models/vent-baja/material-evidence/spec-chain-steel/chain-steel_height.png",
+      "url": "chain-steel_height.png",
+      "channel": "height",
+      "source": "reference-pixel-extraction"
+     },
+     "normal": {
+      "path": "/home/user/formafind/models/vent-baja/material-evidence/spec-chain-steel/chain-steel_normal.png",
+      "url": "chain-steel_normal.png",
+      "channel": "normal",
+      "source": "reference-pixel-extraction"
+     },
+     "ao": {
+      "path": "/home/user/formafind/models/vent-baja/material-evidence/spec-chain-steel/chain-steel_ao.png",
+      "url": "chain-steel_ao.png",
+      "channel": "ao",
+      "source": "reference-pixel-extraction"
+     }
+    }
+   },
+   {
+    "materialId": "carbon-cap",
+    "confidence": 0.86,
+    "verdict": "pass",
+    "usable": true,
+    "maps": {
+     "albedo": {
+      "path": "/home/user/formafind/models/vent-baja/material-evidence/spec-carbon-cap/carbon-cap_albedo.png",
+      "url": "carbon-cap_albedo.png",
+      "channel": "albedo",
+      "source": "reference-pixel-extraction"
+     },
+     "roughness": {
+      "path": "/home/user/formafind/models/vent-baja/material-evidence/spec-carbon-cap/carbon-cap_roughness.png",
+      "url": "carbon-cap_roughness.png",
+      "channel": "roughness",
+      "source": "reference-pixel-extraction"
+     },
+     "height": {
+      "path": "/home/user/formafind/models/vent-baja/material-evidence/spec-carbon-cap/carbon-cap_height.png",
+      "url": "carbon-cap_height.png",
+      "channel": "height",
+      "source": "reference-pixel-extraction"
+     },
+     "normal": {
+      "path": "/home/user/formafind/models/vent-baja/material-evidence/spec-carbon-cap/carbon-cap_normal.png",
+      "url": "carbon-cap_normal.png",
+      "channel": "normal",
+      "source": "reference-pixel-extraction"
+     },
+     "ao": {
+      "path": "/home/user/formafind/models/vent-baja/material-evidence/spec-carbon-cap/carbon-cap_ao.png",
+      "url": "carbon-cap_ao.png",
+      "channel": "ao",
+      "source": "reference-pixel-extraction"
+     }
+    }
+   },
+   {
+    "materialId": "reflector-red",
+    "confidence": 0.86,
+    "verdict": "pass",
+    "usable": true,
+    "maps": {
+     "albedo": {
+      "path": "/home/user/formafind/models/vent-baja/material-evidence/spec-reflector-red/reflector-red_albedo.png",
+      "url": "reflector-red_albedo.png",
+      "channel": "albedo",
+      "source": "reference-pixel-extraction"
+     },
+     "roughness": {
+      "path": "/home/user/formafind/models/vent-baja/material-evidence/spec-reflector-red/reflector-red_roughness.png",
+      "url": "reflector-red_roughness.png",
+      "channel": "roughness",
+      "source": "reference-pixel-extraction"
+     },
+     "height": {
+      "path": "/home/user/formafind/models/vent-baja/material-evidence/spec-reflector-red/reflector-red_height.png",
+      "url": "reflector-red_height.png",
+      "channel": "height",
+      "source": "reference-pixel-extraction"
+     },
+     "normal": {
+      "path": "/home/user/formafind/models/vent-baja/material-evidence/spec-reflector-red/reflector-red_normal.png",
+      "url": "reflector-red_normal.png",
+      "channel": "normal",
+      "source": "reference-pixel-extraction"
+     },
+     "ao": {
+      "path": "/home/user/formafind/models/vent-baja/material-evidence/spec-reflector-red/reflector-red_ao.png",
+      "url": "reflector-red_ao.png",
+      "channel": "ao",
+      "source": "reference-pixel-extraction"
+     }
+    }
+   },
+   {
+    "materialId": "white-plastic",
+    "confidence": 0.724,
+    "verdict": "pass",
+    "usable": true,
+    "maps": {
+     "albedo": {
+      "path": "/home/user/formafind/models/vent-baja/material-evidence/spec-white-plastic/white-plastic_albedo.png",
+      "url": "white-plastic_albedo.png",
+      "channel": "albedo",
+      "source": "reference-pixel-extraction"
+     },
+     "roughness": {
+      "path": "/home/user/formafind/models/vent-baja/material-evidence/spec-white-plastic/white-plastic_roughness.png",
+      "url": "white-plastic_roughness.png",
+      "channel": "roughness",
+      "source": "reference-pixel-extraction"
+     },
+     "height": {
+      "path": "/home/user/formafind/models/vent-baja/material-evidence/spec-white-plastic/white-plastic_height.png",
+      "url": "white-plastic_height.png",
+      "channel": "height",
+      "source": "reference-pixel-extraction"
+     },
+     "normal": {
+      "path": "/home/user/formafind/models/vent-baja/material-evidence/spec-white-plastic/white-plastic_normal.png",
+      "url": "white-plastic_normal.png",
+      "channel": "normal",
+      "source": "reference-pixel-extraction"
+     },
+     "ao": {
+      "path": "/home/user/formafind/models/vent-baja/material-evidence/spec-white-plastic/white-plastic_ao.png",
+      "url": "white-plastic_ao.png",
+      "channel": "ao",
+      "source": "reference-pixel-extraction"
+     }
+    }
+   }
+  ]
+ },
+ "materials": {
+  "red-plastic": {
+   "referencePbr": {
+    "version": "1.0",
+    "sourceImage": "/home/user/formafind/models/vent-baja/material-evidence/00-red-gloss.png",
+    "extractor": "stage1_intake/extract_pbr_evidence.py",
+    "method": "single-image pixel evidence with de-lighting estimate; not photogrammetry",
+    "usable": true,
+    "verdict": "pass",
+    "confidence": 0.86,
+    "estimatedFidelity": 0.86,
+    "targetThreshold": 0.7,
+    "hardLimit": "A single image cannot uniquely recover true albedo/roughness/normal/AO; maps are reference-derived estimates.",
+    "maps": {
+     "albedo": {
+      "path": "/home/user/formafind/models/vent-baja/material-evidence/pbr-00-red-gloss/red-plastic_albedo.png",
+      "url": "red-plastic_albedo.png",
+      "channel": "albedo",
+      "source": "reference-pixel-extraction"
+     },
+     "roughness": {
+      "path": "/home/user/formafind/models/vent-baja/material-evidence/pbr-00-red-gloss/red-plastic_roughness.png",
+      "url": "red-plastic_roughness.png",
+      "channel": "roughness",
+      "source": "reference-pixel-extraction"
+     },
+     "height": {
+      "path": "/home/user/formafind/models/vent-baja/material-evidence/pbr-00-red-gloss/red-plastic_height.png",
+      "url": "red-plastic_height.png",
+      "channel": "height",
+      "source": "reference-pixel-extraction"
+     },
+     "normal": {
+      "path": "/home/user/formafind/models/vent-baja/material-evidence/pbr-00-red-gloss/red-plastic_normal.png",
+      "url": "red-plastic_normal.png",
+      "channel": "normal",
+      "source": "reference-pixel-extraction"
+     },
+     "ao": {
+      "path": "/home/user/formafind/models/vent-baja/material-evidence/pbr-00-red-gloss/red-plastic_ao.png",
+      "url": "red-plastic_ao.png",
+      "channel": "ao",
+      "source": "reference-pixel-extraction"
+     }
+    },
+    "diagnostics": {
+     "sourceWidth": 50,
+     "sourceHeight": 22,
+     "mapSize": 512,
+     "cropBBoxPixels": {
+      "x": 23,
+      "y": 0,
+      "width": 27,
+      "height": 22
+     },
+     "mask": {
+      "backgroundColor": "#FFFFFF",
+      "backgroundNoise": 352.422,
+      "transparentPixelFraction": 0.0,
+      "foregroundCoverage": 0.3173
+     },
+     "mapStats": {
+      "valueRange": 0.3846,
+      "heightP90Gradient": 0.07141,
+      "roughnessBase": 0.683,
+      "roughnessVariation": 0.113,
+      "normalStrength": 0.24,
+      "blurRadius": 10
+     },
+     "palette": [
+      "#9B0117",
+      "#A8031A",
+      "#B11728",
+      "#DA7E80",
+      "#BE3E49"
+     ]
+    },
+    "warnings": [
+     "single-image inverse rendering cannot prove true physical PBR; confidence is capped"
+    ]
+   },
+   "materialEvidence": {
+    "componentId": "side-panel-l",
+    "regionId": "red-gloss",
+    "crop": {
+     "path": "/home/user/formafind/models/vent-baja/material-evidence/00-red-gloss.png",
+     "bbox": {
+      "x": 335,
+      "y": 250,
+      "width": 50,
+      "height": 22
+     },
+     "sourceWidth": 1280,
+     "sourceHeight": 853,
+     "loaderWarnings": [],
+     "coverage": 0.001
+    },
+    "observations": [
+     "chromatic base-colour response",
+     "strong image-space gradient; verify it is material pattern, not lighting",
+     "single-image PBR inference requires controlled render validation"
+    ],
+    "hypothesis": {
+     "componentId": "side-panel-l",
+     "regionId": "red-gloss",
+     "materialId": "plastic.glossy",
+     "family": "plastic",
+     "subtype": "gloss-plastic",
+     "finish": "gloss",
+     "aliases": [],
+     "confidence": 0.86,
+     "source": "vision"
+    },
+    "alternatives": []
+   },
+   "materialFamily": "plastic",
+   "materialFinish": "glossy",
+   "materialReference": {
+    "registry": "/home/user/formafind/.claude/skills/img2threejs/docs/materials/material-reference.json",
+    "profileId": "plastic.glossy",
+    "method": "explicit-material-id",
+    "confidence": 1.0,
+    "sourceRefs": [
+     "three.mesh-physical",
+     "three.mesh-standard",
+     "adobe.pbr-guide-1",
+     "google.filament-pbr",
+     "mit.material-recognition"
+    ],
+    "requiredMaps": [
+     "map",
+     "roughnessMap"
+    ],
+    "optionalMaps": [
+     "normalMap",
+     "clearcoatMap"
+    ],
+    "validationViews": [
+     "neutral-studio",
+     "grazing",
+     "environment-reflection",
+     "reference-beauty"
+    ]
+   },
+   "materialSubtype": "generic-polymer",
+   "referenceMaterialId": "plastic.glossy",
+   "textureAnalysis": {
+    "finishClass": "painted-metal",
+    "recipe": {
+     "metalness": 0.0,
+     "roughness": 0.5,
+     "clearcoat": 1.0,
+     "clearcoatRoughness": 0.05,
+     "transmission": 0.0,
+     "ior": 1.5,
+     "envMapIntensity": 1.0,
+     "anisotropy": 0.0,
+     "procedural": "flat-clearcoat"
+    },
+    "palette": [
+     "#FBF8F7",
+     "#EED2D5",
+     "#BC4E59",
+     "#A40A1F",
+     "#A60C20"
+    ],
+    "paletteHueRisk": [],
+    "gradientAxis": "horizontal",
+    "stats": {
+     "meanLum": 135.9,
+     "meanSaturation": 0.57,
+     "gradientStrength": 0.752,
+     "mottle": 0.02,
+     "streakRatio": 1.24,
+     "hueSpread": 0.001,
+     "specularFraction": 0.359
+    }
+   },
+   "ior": {
+    "base": 1.5,
+    "variation": 0.0
+   },
+   "roughness": {
+    "base": 0.28,
+    "variation": 0.058,
+    "map": {
+     "path": "/home/user/formafind/models/vent-baja/material-evidence/spec-red-plastic/red-plastic_roughness.png",
+     "url": "red-plastic_roughness.png",
+     "channel": "roughness",
+     "source": "reference-pixel-extraction"
+    },
+    "localResponse": "reference-derived roughness estimate; cavities and textured zones trend rougher, bright highlights trend smoother"
+   }
+  },
+  "white-plastic": {
+   "referencePbr": {
+    "version": "1.0",
+    "sourceImage": "/home/user/formafind/models/vent-baja/material-evidence/01-white-gloss.png",
+    "extractor": "stage1_intake/extract_pbr_evidence.py",
+    "method": "single-image pixel evidence with de-lighting estimate; not photogrammetry",
+    "usable": true,
+    "verdict": "pass",
+    "confidence": 0.799,
+    "estimatedFidelity": 0.799,
+    "targetThreshold": 0.7,
+    "hardLimit": "A single image cannot uniquely recover true albedo/roughness/normal/AO; maps are reference-derived estimates.",
+    "maps": {
+     "albedo": {
+      "path": "/home/user/formafind/models/vent-baja/material-evidence/pbr-01-white-gloss/white-plastic_albedo.png",
+      "url": "white-plastic_albedo.png",
+      "channel": "albedo",
+      "source": "reference-pixel-extraction"
+     },
+     "roughness": {
+      "path": "/home/user/formafind/models/vent-baja/material-evidence/pbr-01-white-gloss/white-plastic_roughness.png",
+      "url": "white-plastic_roughness.png",
+      "channel": "roughness",
+      "source": "reference-pixel-extraction"
+     },
+     "height": {
+      "path": "/home/user/formafind/models/vent-baja/material-evidence/pbr-01-white-gloss/white-plastic_height.png",
+      "url": "white-plastic_height.png",
+      "channel": "height",
+      "source": "reference-pixel-extraction"
+     },
+     "normal": {
+      "path": "/home/user/formafind/models/vent-baja/material-evidence/pbr-01-white-gloss/white-plastic_normal.png",
+      "url": "white-plastic_normal.png",
+      "channel": "normal",
+      "source": "reference-pixel-extraction"
+     },
+     "ao": {
+      "path": "/home/user/formafind/models/vent-baja/material-evidence/pbr-01-white-gloss/white-plastic_ao.png",
+      "url": "white-plastic_ao.png",
+      "channel": "ao",
+      "source": "reference-pixel-extraction"
+     }
+    },
+    "diagnostics": {
+     "sourceWidth": 24,
+     "sourceHeight": 12,
+     "mapSize": 512,
+     "cropBBoxPixels": {
+      "x": 19,
+      "y": 0,
+      "width": 5,
+      "height": 8
+     },
+     "mask": {
+      "backgroundColor": "#DCDFE3",
+      "backgroundNoise": 38.923,
+      "transparentPixelFraction": 0.0,
+      "foregroundCoverage": 0.0382
+     },
+     "mapStats": {
+      "valueRange": 0.2916,
+      "heightP90Gradient": 0.02068,
+      "roughnessBase": 0.68,
+      "roughnessVariation": 0.05,
+      "normalStrength": 0.18,
+      "blurRadius": 10
+     },
+     "palette": [
+      "#6A6C6A",
+      "#A2A4A6",
+      "#7F8185",
+      "#5B5D59",
+      "#939699"
+     ]
+    },
+    "warnings": [
+     "foreground mask is very small",
+     "single-image inverse rendering cannot prove true physical PBR; confidence is capped"
+    ]
+   },
+   "materialEvidence": {
+    "componentId": "silencer",
+    "regionId": "white-gloss",
+    "crop": {
+     "path": "/home/user/formafind/models/vent-baja/material-evidence/01-white-gloss.png",
+     "bbox": {
+      "x": 525,
+      "y": 356,
+      "width": 24,
+      "height": 12
+     },
+     "sourceWidth": 1280,
+     "sourceHeight": 853,
+     "loaderWarnings": [],
+     "coverage": 0.0003
+    },
+    "observations": [
+     "near-neutral colour response",
+     "strong image-space gradient; verify it is material pattern, not lighting",
+     "single-image PBR inference requires controlled render validation"
+    ],
+    "hypothesis": {
+     "componentId": "silencer",
+     "regionId": "white-gloss",
+     "materialId": "plastic.glossy",
+     "family": "plastic",
+     "subtype": "gloss-plastic",
+     "finish": "gloss",
+     "aliases": [],
+     "confidence": 0.799,
+     "source": "vision"
+    },
+    "alternatives": []
+   },
+   "materialFamily": "plastic",
+   "materialFinish": "glossy",
+   "materialReference": {
+    "registry": "/home/user/formafind/.claude/skills/img2threejs/docs/materials/material-reference.json",
+    "profileId": "plastic.glossy",
+    "method": "explicit-material-id",
+    "confidence": 1.0,
+    "sourceRefs": [
+     "three.mesh-physical",
+     "three.mesh-standard",
+     "adobe.pbr-guide-1",
+     "google.filament-pbr",
+     "mit.material-recognition"
+    ],
+    "requiredMaps": [
+     "map",
+     "roughnessMap"
+    ],
+    "optionalMaps": [
+     "normalMap",
+     "clearcoatMap"
+    ],
+    "validationViews": [
+     "neutral-studio",
+     "grazing",
+     "environment-reflection",
+     "reference-beauty"
+    ]
+   },
+   "materialSubtype": "generic-polymer",
+   "referenceMaterialId": "plastic.glossy",
+   "textureAnalysis": {
+    "finishClass": "plastic",
+    "recipe": {
+     "metalness": 0.05,
+     "roughness": 0.6,
+     "clearcoat": 0.2,
+     "clearcoatRoughness": 0.3,
+     "transmission": 0.0,
+     "ior": 1.5,
+     "envMapIntensity": 0.7,
+     "anisotropy": 0.0,
+     "procedural": "flat-clearcoat"
+    },
+    "palette": [
+     "#B9BBC3",
+     "#B9BBC3",
+     "#97999D",
+     "#6F7171",
+     "#6F7171"
+    ],
+    "paletteHueRisk": [],
+    "gradientAxis": "horizontal",
+    "stats": {
+     "meanLum": 151.8,
+     "meanSaturation": 0.044,
+     "gradientStrength": 0.294,
+     "mottle": 0.005,
+     "streakRatio": 1.19,
+     "hueSpread": 0.0,
+     "specularFraction": 0.0
+    }
+   },
+   "ior": {
+    "base": 1.5,
+    "variation": 0.0
+   },
+   "roughness": {
+    "base": 0.28,
+    "variation": 0.05,
+    "map": {
+     "path": "/home/user/formafind/models/vent-baja/material-evidence/spec-white-plastic/white-plastic_roughness.png",
+     "url": "white-plastic_roughness.png",
+     "channel": "roughness",
+     "source": "reference-pixel-extraction"
+    },
+    "localResponse": "reference-derived roughness estimate; cavities and textured zones trend rougher, bright highlights trend smoother"
+   }
+  },
+  "grey-plastic": {
+   "referencePbr": {
+    "version": "1.0",
+    "sourceImage": "/home/user/formafind/models/vent-baja/material-evidence/02-grey-stripe.png",
+    "extractor": "stage1_intake/extract_pbr_evidence.py",
+    "method": "single-image pixel evidence with de-lighting estimate; not photogrammetry",
+    "usable": true,
+    "verdict": "pass",
+    "confidence": 0.751,
+    "estimatedFidelity": 0.751,
+    "targetThreshold": 0.7,
+    "hardLimit": "A single image cannot uniquely recover true albedo/roughness/normal/AO; maps are reference-derived estimates.",
+    "maps": {
+     "albedo": {
+      "path": "/home/user/formafind/models/vent-baja/material-evidence/pbr-02-grey-stripe/grey-plastic_albedo.png",
+      "url": "grey-plastic_albedo.png",
+      "channel": "albedo",
+      "source": "reference-pixel-extraction"
+     },
+     "roughness": {
+      "path": "/home/user/formafind/models/vent-baja/material-evidence/pbr-02-grey-stripe/grey-plastic_roughness.png",
+      "url": "grey-plastic_roughness.png",
+      "channel": "roughness",
+      "source": "reference-pixel-extraction"
+     },
+     "height": {
+      "path": "/home/user/formafind/models/vent-baja/material-evidence/pbr-02-grey-stripe/grey-plastic_height.png",
+      "url": "grey-plastic_height.png",
+      "channel": "height",
+      "source": "reference-pixel-extraction"
+     },
+     "normal": {
+      "path": "/home/user/formafind/models/vent-baja/material-evidence/pbr-02-grey-stripe/grey-plastic_normal.png",
+      "url": "grey-plastic_normal.png",
+      "channel": "normal",
+      "source": "reference-pixel-extraction"
+     },
+     "ao": {
+      "path": "/home/user/formafind/models/vent-baja/material-evidence/pbr-02-grey-stripe/grey-plastic_ao.png",
+      "url": "grey-plastic_ao.png",
+      "channel": "ao",
+      "source": "reference-pixel-extraction"
+     }
+    },
+    "diagnostics": {
+     "sourceWidth": 40,
+     "sourceHeight": 12,
+     "mapSize": 512,
+     "cropBBoxPixels": {
+      "x": 0,
+      "y": 0,
+      "width": 40,
+      "height": 12
+     },
+     "mask": {
+      "backgroundColor": "#5A6776",
+      "backgroundNoise": 3.317,
+      "transparentPixelFraction": 0.0,
+      "foregroundCoverage": 1.0
+     },
+     "mapStats": {
+      "valueRange": 0.08,
+      "heightP90Gradient": 0.02525,
+      "roughnessBase": 0.681,
+      "roughnessVariation": 0.05,
+      "normalStrength": 0.186,
+      "blurRadius": 10
+     },
+     "palette": [
+      "#5A6776",
+      "#5B6879",
+      "#576574",
+      "#506877"
+     ]
+    },
+    "warnings": [
+     "image is not clearly isolated from background; using most pixels as material evidence",
+     "object/background separation is weak",
+     "single-image inverse rendering cannot prove true physical PBR; confidence is capped",
+     "low value range weakens height/roughness inference"
+    ]
+   },
+   "materialEvidence": {
+    "componentId": "side-panel-l",
+    "regionId": "grey-stripe",
+    "crop": {
+     "path": "/home/user/formafind/models/vent-baja/material-evidence/02-grey-stripe.png",
+     "bbox": {
+      "x": 545,
+      "y": 258,
+      "width": 40,
+      "height": 12
+     },
+     "sourceWidth": 1280,
+     "sourceHeight": 853,
+     "loaderWarnings": [],
+     "coverage": 0.0004
+    },
+    "observations": [
+     "chromatic base-colour response",
+     "directional surface frequency",
+     "single-image PBR inference requires controlled render validation"
+    ],
+    "hypothesis": {
+     "componentId": "side-panel-l",
+     "regionId": "grey-stripe",
+     "materialId": "plastic.matte",
+     "family": "plastic",
+     "subtype": "satin-plastic",
+     "finish": "satin",
+     "aliases": [],
+     "confidence": 0.751,
+     "source": "vision"
+    },
+    "alternatives": []
+   },
+   "materialFamily": "plastic",
+   "materialFinish": "matte",
+   "materialReference": {
+    "registry": "/home/user/formafind/.claude/skills/img2threejs/docs/materials/material-reference.json",
+    "profileId": "plastic.matte",
+    "method": "explicit-material-id",
+    "confidence": 1.0,
+    "sourceRefs": [
+     "three.mesh-standard",
+     "adobe.pbr-guide-1",
+     "google.filament-pbr",
+     "mit.material-recognition"
+    ],
+    "requiredMaps": [
+     "map",
+     "roughnessMap"
+    ],
+    "optionalMaps": [
+     "normalMap",
+     "aoMap"
+    ],
+    "validationViews": [
+     "albedo-unlit",
+     "neutral-studio",
+     "grazing"
+    ]
+   },
+   "materialSubtype": "generic-polymer",
+   "referenceMaterialId": "plastic.matte",
+   "textureAnalysis": {
+    "finishClass": "painted-metal",
+    "recipe": {
+     "metalness": 0.0,
+     "roughness": 0.5,
+     "clearcoat": 1.0,
+     "clearcoatRoughness": 0.05,
+     "transmission": 0.0,
+     "ior": 1.5,
+     "envMapIntensity": 1.0,
+     "anisotropy": 0.0,
+     "procedural": "flat-clearcoat"
+    },
+    "palette": [
+     "#5A6776",
+     "#596776",
+     "#596776",
+     "#596776",
+     "#576676"
+    ],
+    "paletteHueRisk": [
+     {
+      "stop": "#5A6776",
+      "hueRisk": "blue-collapse",
+      "suggestedRgb": [
+       118,
+       103,
+       90
+      ]
+     },
+     {
+      "stop": "#596776",
+      "hueRisk": "blue-collapse",
+      "suggestedRgb": [
+       118,
+       103,
+       89
+      ]
+     },
+     {
+      "stop": "#596776",
+      "hueRisk": "blue-collapse",
+      "suggestedRgb": [
+       118,
+       103,
+       89
+      ]
+     },
+     {
+      "stop": "#596776",
+      "hueRisk": "blue-collapse",
+      "suggestedRgb": [
+       118,
+       103,
+       89
+      ]
+     },
+     {
+      "stop": "#576676",
+      "hueRisk": "blue-collapse",
+      "suggestedRgb": [
+       118,
+       102,
+       87
+      ]
+     }
+    ],
+    "gradientAxis": "horizontal",
+    "stats": {
+     "meanLum": 100.7,
+     "meanSaturation": 0.245,
+     "gradientStrength": 0.007,
+     "mottle": 0.002,
+     "streakRatio": 2.25,
+     "hueSpread": 0.002,
+     "specularFraction": 0.0
+    }
+   },
+   "ior": {
+    "base": 1.5,
+    "variation": 0.0
+   },
+   "roughness": {
+    "base": 0.68,
+    "variation": 0.05,
+    "map": {
+     "path": "/home/user/formafind/models/vent-baja/material-evidence/spec-grey-plastic/grey-plastic_roughness.png",
+     "url": "grey-plastic_roughness.png",
+     "channel": "roughness",
+     "source": "reference-pixel-extraction"
+    },
+    "localResponse": "reference-derived roughness estimate; cavities and textured zones trend rougher, bright highlights trend smoother"
+   }
+  },
+  "seat-vinyl": {
+   "referencePbr": {
+    "version": "1.0",
+    "sourceImage": "/home/user/formafind/models/vent-baja/material-evidence/03-seat-vinyl.png",
+    "extractor": "stage1_intake/extract_pbr_evidence.py",
+    "method": "single-image pixel evidence with de-lighting estimate; not photogrammetry",
+    "usable": true,
+    "verdict": "pass",
+    "confidence": 0.793,
+    "estimatedFidelity": 0.793,
+    "targetThreshold": 0.7,
+    "hardLimit": "A single image cannot uniquely recover true albedo/roughness/normal/AO; maps are reference-derived estimates.",
+    "maps": {
+     "albedo": {
+      "path": "/home/user/formafind/models/vent-baja/material-evidence/pbr-03-seat-vinyl/seat-vinyl_albedo.png",
+      "url": "seat-vinyl_albedo.png",
+      "channel": "albedo",
+      "source": "reference-pixel-extraction"
+     },
+     "roughness": {
+      "path": "/home/user/formafind/models/vent-baja/material-evidence/pbr-03-seat-vinyl/seat-vinyl_roughness.png",
+      "url": "seat-vinyl_roughness.png",
+      "channel": "roughness",
+      "source": "reference-pixel-extraction"
+     },
+     "height": {
+      "path": "/home/user/formafind/models/vent-baja/material-evidence/pbr-03-seat-vinyl/seat-vinyl_height.png",
+      "url": "seat-vinyl_height.png",
+      "channel": "height",
+      "source": "reference-pixel-extraction"
+     },
+     "normal": {
+      "path": "/home/user/formafind/models/vent-baja/material-evidence/pbr-03-seat-vinyl/seat-vinyl_normal.png",
+      "url": "seat-vinyl_normal.png",
+      "channel": "normal",
+      "source": "reference-pixel-extraction"
+     },
+     "ao": {
+      "path": "/home/user/formafind/models/vent-baja/material-evidence/pbr-03-seat-vinyl/seat-vinyl_ao.png",
+      "url": "seat-vinyl_ao.png",
+      "channel": "ao",
+      "source": "reference-pixel-extraction"
+     }
+    },
+    "diagnostics": {
+     "sourceWidth": 80,
+     "sourceHeight": 16,
+     "mapSize": 512,
+     "cropBBoxPixels": {
+      "x": 0,
+      "y": 0,
+      "width": 80,
+      "height": 16
+     },
+     "mask": {
+      "backgroundColor": "#FFFFFF",
+      "backgroundNoise": 320.433,
+      "transparentPixelFraction": 0.0,
+      "foregroundCoverage": 1.0
+     },
+     "mapStats": {
+      "valueRange": 0.8042,
+      "heightP90Gradient": 0.01911,
+      "roughnessBase": 0.685,
+      "roughnessVariation": 0.05,
+      "normalStrength": 0.179,
+      "blurRadius": 10
+     },
+     "palette": [
+      "#FEFEFE",
+      "#383939",
+      "#4A4C4B",
+      "#848480",
+      "#C6C6C5"
+     ]
+    },
+    "warnings": [
+     "foreground mask is tiny; material extraction is likely unreliable",
+     "image is not clearly isolated from background; using most pixels as material evidence",
+     "object/background separation is weak",
+     "single-image inverse rendering cannot prove true physical PBR; confidence is capped"
+    ]
+   },
+   "materialEvidence": {
+    "componentId": "seat",
+    "regionId": "seat-vinyl",
+    "crop": {
+     "path": "/home/user/formafind/models/vent-baja/material-evidence/03-seat-vinyl.png",
+     "bbox": {
+      "x": 480,
+      "y": 213,
+      "width": 80,
+      "height": 16
+     },
+     "sourceWidth": 1280,
+     "sourceHeight": 853,
+     "loaderWarnings": [],
+     "coverage": 0.0012
+    },
+    "observations": [
+     "near-neutral colour response",
+     "directional surface frequency",
+     "strong image-space gradient; verify it is material pattern, not lighting",
+     "single-image PBR inference requires controlled render validation"
+    ],
+    "hypothesis": {
+     "componentId": "seat",
+     "regionId": "seat-vinyl",
+     "materialId": "leather.matte",
+     "family": "fabric",
+     "subtype": "vinyl",
+     "finish": "matte",
+     "aliases": [],
+     "confidence": 0.793,
+     "source": "vision"
+    },
+    "alternatives": []
+   },
+   "materialFamily": "leather",
+   "materialFinish": "matte-worn",
+   "materialReference": {
+    "registry": "/home/user/formafind/.claude/skills/img2threejs/docs/materials/material-reference.json",
+    "profileId": "leather.matte",
+    "method": "explicit-material-id",
+    "confidence": 1.0,
+    "sourceRefs": [
+     "three.mesh-physical",
+     "three.mesh-standard",
+     "adobe.pbr-guide-2",
+     "mit.material-recognition"
+    ],
+    "requiredMaps": [
+     "map",
+     "roughnessMap",
+     "normalMap"
+    ],
+    "optionalMaps": [
+     "aoMap",
+     "clearcoatMap"
+    ],
+    "validationViews": [
+     "albedo-unlit",
+     "neutral-studio",
+     "grazing",
+     "reference-beauty"
+    ]
+   },
+   "materialSubtype": "natural-or-synthetic",
+   "referenceMaterialId": "leather.matte",
+   "textureAnalysis": {
+    "finishClass": "brushed-steel",
+    "recipe": {
+     "metalness": 1.0,
+     "roughness": 0.35,
+     "clearcoat": 0.0,
+     "clearcoatRoughness": 0.0,
+     "transmission": 0.0,
+     "ior": 1.5,
+     "envMapIntensity": 1.0,
+     "anisotropy": 1.0,
+     "procedural": "brushed"
+    },
+    "palette": [
+     "#FFFFFF",
+     "#FEFEFE",
+     "#484945",
+     "#3B3C3E",
+     "#464749"
+    ],
+    "paletteHueRisk": [],
+    "gradientAxis": "vertical",
+    "stats": {
+     "meanLum": 135.1,
+     "meanSaturation": 0.027,
+     "gradientStrength": 0.778,
+     "mottle": 0.007,
+     "streakRatio": 0.39,
+     "hueSpread": 0.0,
+     "specularFraction": 0.34
+    }
+   },
+   "roughness": {
+    "base": 0.62,
+    "variation": 0.05,
+    "map": {
+     "path": "/home/user/formafind/models/vent-baja/material-evidence/spec-seat-vinyl/seat-vinyl_roughness.png",
+     "url": "seat-vinyl_roughness.png",
+     "channel": "roughness",
+     "source": "reference-pixel-extraction"
+    },
+    "localResponse": "reference-derived roughness estimate; cavities and textured zones trend rougher, bright highlights trend smoother"
+   }
+  },
+  "gold-anodized": {
+   "referencePbr": {
+    "version": "1.0",
+    "sourceImage": "/home/user/formafind/models/vent-baja/material-evidence/04-gold-tube.png",
+    "extractor": "stage1_intake/extract_pbr_evidence.py",
+    "method": "single-image pixel evidence with de-lighting estimate; not photogrammetry",
+    "usable": true,
+    "verdict": "pass",
+    "confidence": 0.86,
+    "estimatedFidelity": 0.86,
+    "targetThreshold": 0.7,
+    "hardLimit": "A single image cannot uniquely recover true albedo/roughness/normal/AO; maps are reference-derived estimates.",
+    "maps": {
+     "albedo": {
+      "path": "/home/user/formafind/models/vent-baja/material-evidence/pbr-04-gold-tube/gold-anodized_albedo.png",
+      "url": "gold-anodized_albedo.png",
+      "channel": "albedo",
+      "source": "reference-pixel-extraction"
+     },
+     "roughness": {
+      "path": "/home/user/formafind/models/vent-baja/material-evidence/pbr-04-gold-tube/gold-anodized_roughness.png",
+      "url": "gold-anodized_roughness.png",
+      "channel": "roughness",
+      "source": "reference-pixel-extraction"
+     },
+     "height": {
+      "path": "/home/user/formafind/models/vent-baja/material-evidence/pbr-04-gold-tube/gold-anodized_height.png",
+      "url": "gold-anodized_height.png",
+      "channel": "height",
+      "source": "reference-pixel-extraction"
+     },
+     "normal": {
+      "path": "/home/user/formafind/models/vent-baja/material-evidence/pbr-04-gold-tube/gold-anodized_normal.png",
+      "url": "gold-anodized_normal.png",
+      "channel": "normal",
+      "source": "reference-pixel-extraction"
+     },
+     "ao": {
+      "path": "/home/user/formafind/models/vent-baja/material-evidence/pbr-04-gold-tube/gold-anodized_ao.png",
+      "url": "gold-anodized_ao.png",
+      "channel": "ao",
+      "source": "reference-pixel-extraction"
+     }
+    },
+    "diagnostics": {
+     "sourceWidth": 14,
+     "sourceHeight": 70,
+     "mapSize": 512,
+     "cropBBoxPixels": {
+      "x": 0,
+      "y": 0,
+      "width": 14,
+      "height": 70
+     },
+     "mask": {
+      "backgroundColor": "#B27E24",
+      "backgroundNoise": 125.483,
+      "transparentPixelFraction": 0.0,
+      "foregroundCoverage": 0.552
+     },
+     "mapStats": {
+      "valueRange": 0.5949,
+      "heightP90Gradient": 0.07104,
+      "roughnessBase": 0.696,
+      "roughnessVariation": 0.114,
+      "normalStrength": 0.239,
+      "blurRadius": 10
+     },
+     "palette": [
+      "#745010",
+      "#DBB238",
+      "#9F7521",
+      "#E4B58C",
+      "#CC212A"
+     ]
+    },
+    "warnings": [
+     "single-image inverse rendering cannot prove true physical PBR; confidence is capped"
+    ]
+   },
+   "materialEvidence": {
+    "componentId": "fork-upper-l",
+    "regionId": "gold-tube",
+    "crop": {
+     "path": "/home/user/formafind/models/vent-baja/material-evidence/04-gold-tube.png",
+     "bbox": {
+      "x": 868,
+      "y": 215,
+      "width": 14,
+      "height": 70
+     },
+     "sourceWidth": 1280,
+     "sourceHeight": 853,
+     "loaderWarnings": [],
+     "coverage": 0.0009
+    },
+    "observations": [
+     "chromatic base-colour response",
+     "directional surface frequency",
+     "strong image-space gradient; verify it is material pattern, not lighting",
+     "single-image PBR inference requires controlled render validation"
+    ],
+    "hypothesis": {
+     "componentId": "fork-upper-l",
+     "regionId": "gold-tube",
+     "materialId": "metal.gold",
+     "family": "metal",
+     "subtype": "anodized",
+     "finish": "metallic",
+     "aliases": [],
+     "confidence": 0.86,
+     "source": "vision"
+    },
+    "alternatives": []
+   },
+   "materialFamily": "metal",
+   "materialFinish": "polished",
+   "materialReference": {
+    "registry": "/home/user/formafind/.claude/skills/img2threejs/docs/materials/material-reference.json",
+    "profileId": "metal.gold",
+    "method": "explicit-material-id",
+    "confidence": 1.0,
+    "sourceRefs": [
+     "three.mesh-standard",
+     "three.pmrem",
+     "gltf.2",
+     "khronos.gltf-pbr",
+     "adobe.pbr-guide-2",
+     "google.filament-pbr"
+    ],
+    "requiredMaps": [
+     "map",
+     "roughnessMap"
+    ],
+    "optionalMaps": [
+     "normalMap",
+     "metalnessMap"
+    ],
+    "validationViews": [
+     "albedo-unlit",
+     "environment-reflection",
+     "grazing",
+     "reference-beauty"
+    ]
+   },
+   "materialSubtype": "gold",
+   "referenceMaterialId": "metal.gold",
+   "textureAnalysis": {
+    "finishClass": "painted-metal",
+    "recipe": {
+     "metalness": 0.0,
+     "roughness": 0.5,
+     "clearcoat": 1.0,
+     "clearcoatRoughness": 0.05,
+     "transmission": 0.0,
+     "ior": 1.5,
+     "envMapIntensity": 1.0,
+     "anisotropy": 0.0,
+     "procedural": "flat-clearcoat"
+    },
+    "palette": [
+     "#DAAEB0",
+     "#FAF7FD",
+     "#ECE3EA",
+     "#AF8A2B",
+     "#C49D31"
+    ],
+    "paletteHueRisk": [],
+    "gradientAxis": "vertical",
+    "stats": {
+     "meanLum": 184.9,
+     "meanSaturation": 0.42,
+     "gradientStrength": 0.664,
+     "mottle": 0.014,
+     "streakRatio": 0.23,
+     "hueSpread": 0.038,
+     "specularFraction": 0.417
+    }
+   },
+   "roughness": {
+    "base": 0.22,
+    "variation": 0.061,
+    "map": {
+     "path": "/home/user/formafind/models/vent-baja/material-evidence/spec-gold-anodized/gold-anodized_roughness.png",
+     "url": "gold-anodized_roughness.png",
+     "channel": "roughness",
+     "source": "reference-pixel-extraction"
+    },
+    "localResponse": "reference-derived roughness estimate; cavities and textured zones trend rougher, bright highlights trend smoother"
+   }
+  },
+  "tyre-rubber": {
+   "referencePbr": {
+    "version": "1.0",
+    "sourceImage": "/home/user/formafind/models/vent-baja/material-evidence/05-rubber.png",
+    "extractor": "stage1_intake/extract_pbr_evidence.py",
+    "method": "single-image pixel evidence with de-lighting estimate; not photogrammetry",
+    "usable": true,
+    "verdict": "pass",
+    "confidence": 0.86,
+    "estimatedFidelity": 0.86,
+    "targetThreshold": 0.7,
+    "hardLimit": "A single image cannot uniquely recover true albedo/roughness/normal/AO; maps are reference-derived estimates.",
+    "maps": {
+     "albedo": {
+      "path": "/home/user/formafind/models/vent-baja/material-evidence/pbr-05-rubber/tyre-rubber_albedo.png",
+      "url": "tyre-rubber_albedo.png",
+      "channel": "albedo",
+      "source": "reference-pixel-extraction"
+     },
+     "roughness": {
+      "path": "/home/user/formafind/models/vent-baja/material-evidence/pbr-05-rubber/tyre-rubber_roughness.png",
+      "url": "tyre-rubber_roughness.png",
+      "channel": "roughness",
+      "source": "reference-pixel-extraction"
+     },
+     "height": {
+      "path": "/home/user/formafind/models/vent-baja/material-evidence/pbr-05-rubber/tyre-rubber_height.png",
+      "url": "tyre-rubber_height.png",
+      "channel": "height",
+      "source": "reference-pixel-extraction"
+     },
+     "normal": {
+      "path": "/home/user/formafind/models/vent-baja/material-evidence/pbr-05-rubber/tyre-rubber_normal.png",
+      "url": "tyre-rubber_normal.png",
+      "channel": "normal",
+      "source": "reference-pixel-extraction"
+     },
+     "ao": {
+      "path": "/home/user/formafind/models/vent-baja/material-evidence/pbr-05-rubber/tyre-rubber_ao.png",
+      "url": "tyre-rubber_ao.png",
+      "channel": "ao",
+      "source": "reference-pixel-extraction"
+     }
+    },
+    "diagnostics": {
+     "sourceWidth": 28,
+     "sourceHeight": 60,
+     "mapSize": 512,
+     "cropBBoxPixels": {
+      "x": 0,
+      "y": 0,
+      "width": 28,
+      "height": 60
+     },
+     "mask": {
+      "backgroundColor": "#30312F",
+      "backgroundNoise": 26.646,
+      "transparentPixelFraction": 0.0,
+      "foregroundCoverage": 0.1167
+     },
+     "mapStats": {
+      "valueRange": 0.5106,
+      "heightP90Gradient": 0.01879,
+      "roughnessBase": 0.68,
+      "roughnessVariation": 0.05,
+      "normalStrength": 0.178,
+      "blurRadius": 10
+     },
+     "palette": [
+      "#5A5A56",
+      "#696A66",
+      "#8C8C82",
+      "#B3B4A6",
+      "#2C2B24"
+     ]
+    },
+    "warnings": [
+     "single-image inverse rendering cannot prove true physical PBR; confidence is capped"
+    ]
+   },
+   "materialEvidence": {
+    "componentId": "tyre-rear",
+    "regionId": "rubber",
+    "crop": {
+     "path": "/home/user/formafind/models/vent-baja/material-evidence/05-rubber.png",
+     "bbox": {
+      "x": 250,
+      "y": 560,
+      "width": 28,
+      "height": 60
+     },
+     "sourceWidth": 1280,
+     "sourceHeight": 853,
+     "loaderWarnings": [],
+     "coverage": 0.0015
+    },
+    "observations": [
+     "near-neutral colour response",
+     "single-image PBR inference requires controlled render validation"
+    ],
+    "hypothesis": {
+     "componentId": "tyre-rear",
+     "regionId": "rubber",
+     "materialId": "rubber.matte",
+     "family": "rubber",
+     "subtype": "rubber",
+     "finish": "matte",
+     "aliases": [],
+     "confidence": 0.86,
+     "source": "vision"
+    },
+    "alternatives": []
+   },
+   "materialFamily": "rubber",
+   "materialFinish": "matte",
+   "materialReference": {
+    "registry": "/home/user/formafind/.claude/skills/img2threejs/docs/materials/material-reference.json",
+    "profileId": "rubber.matte",
+    "method": "explicit-material-id",
+    "confidence": 1.0,
+    "sourceRefs": [
+     "three.mesh-standard",
+     "adobe.pbr-guide-1",
+     "google.filament-pbr",
+     "mit.material-recognition"
+    ],
+    "requiredMaps": [
+     "map",
+     "roughnessMap",
+     "normalMap"
+    ],
+    "optionalMaps": [
+     "aoMap"
+    ],
+    "validationViews": [
+     "albedo-unlit",
+     "neutral-studio",
+     "grazing",
+     "reference-beauty"
+    ]
+   },
+   "materialSubtype": "generic-elastomer",
+   "referenceMaterialId": "rubber.matte",
+   "textureAnalysis": {
+    "finishClass": "worn-composite",
+    "recipe": {
+     "metalness": 0.0,
+     "roughness": 0.9,
+     "clearcoat": 0.0,
+     "clearcoatRoughness": 0.0,
+     "transmission": 0.0,
+     "ior": 1.5,
+     "envMapIntensity": 0.5,
+     "anisotropy": 0.0,
+     "procedural": "mottle"
+    },
+    "palette": [
+     "#31322F",
+     "#3B3B38",
+     "#363735",
+     "#494948",
+     "#383A3A"
+    ],
+    "paletteHueRisk": [],
+    "gradientAxis": "horizontal",
+    "stats": {
+     "meanLum": 63.4,
+     "meanSaturation": 0.055,
+     "gradientStrength": 0.152,
+     "mottle": 0.022,
+     "streakRatio": 0.7,
+     "hueSpread": 0.191,
+     "specularFraction": 0.0
+    }
+   },
+   "ior": {
+    "base": 1.48,
+    "variation": 0.0
+   },
+   "roughness": {
+    "base": 0.88,
+    "variation": 0.05,
+    "map": {
+     "path": "/home/user/formafind/models/vent-baja/material-evidence/spec-tyre-rubber/tyre-rubber_roughness.png",
+     "url": "tyre-rubber_roughness.png",
+     "channel": "roughness",
+     "source": "reference-pixel-extraction"
+    },
+    "localResponse": "reference-derived roughness estimate; cavities and textured zones trend rougher, bright highlights trend smoother"
+   }
+  },
+  "black-frame": {
+   "referencePbr": {
+    "version": "1.0",
+    "sourceImage": "/home/user/formafind/models/vent-baja/material-evidence/06-black-paint.png",
+    "extractor": "stage1_intake/extract_pbr_evidence.py",
+    "method": "single-image pixel evidence with de-lighting estimate; not photogrammetry",
+    "usable": true,
+    "verdict": "pass",
+    "confidence": 0.86,
+    "estimatedFidelity": 0.86,
+    "targetThreshold": 0.7,
+    "hardLimit": "A single image cannot uniquely recover true albedo/roughness/normal/AO; maps are reference-derived estimates.",
+    "maps": {
+     "albedo": {
+      "path": "/home/user/formafind/models/vent-baja/material-evidence/pbr-06-black-paint/black-frame_albedo.png",
+      "url": "black-frame_albedo.png",
+      "channel": "albedo",
+      "source": "reference-pixel-extraction"
+     },
+     "roughness": {
+      "path": "/home/user/formafind/models/vent-baja/material-evidence/pbr-06-black-paint/black-frame_roughness.png",
+      "url": "black-frame_roughness.png",
+      "channel": "roughness",
+      "source": "reference-pixel-extraction"
+     },
+     "height": {
+      "path": "/home/user/formafind/models/vent-baja/material-evidence/pbr-06-black-paint/black-frame_height.png",
+      "url": "black-frame_height.png",
+      "channel": "height",
+      "source": "reference-pixel-extraction"
+     },
+     "normal": {
+      "path": "/home/user/formafind/models/vent-baja/material-evidence/pbr-06-black-paint/black-frame_normal.png",
+      "url": "black-frame_normal.png",
+      "channel": "normal",
+      "source": "reference-pixel-extraction"
+     },
+     "ao": {
+      "path": "/home/user/formafind/models/vent-baja/material-evidence/pbr-06-black-paint/black-frame_ao.png",
+      "url": "black-frame_ao.png",
+      "channel": "ao",
+      "source": "reference-pixel-extraction"
+     }
+    },
+    "diagnostics": {
+     "sourceWidth": 60,
+     "sourceHeight": 16,
+     "mapSize": 512,
+     "cropBBoxPixels": {
+      "x": 0,
+      "y": 0,
+      "width": 60,
+      "height": 16
+     },
+     "mask": {
+      "backgroundColor": "#2A2A29",
+      "backgroundNoise": 121.277,
+      "transparentPixelFraction": 0.0,
+      "foregroundCoverage": 0.0948
+     },
+     "mapStats": {
+      "valueRange": 0.2949,
+      "heightP90Gradient": 0.01998,
+      "roughnessBase": 0.68,
+      "roughnessVariation": 0.05,
+      "normalStrength": 0.18,
+      "blurRadius": 10
+     },
+     "palette": [
+      "#0F1012",
+      "#201F1A",
+      "#070707",
+      "#3F3A31",
+      "#FFF7EB"
+     ]
+    },
+    "warnings": [
+     "single-image inverse rendering cannot prove true physical PBR; confidence is capped"
+    ]
+   },
+   "materialEvidence": {
+    "componentId": "swingarm-l",
+    "regionId": "black-paint",
+    "crop": {
+     "path": "/home/user/formafind/models/vent-baja/material-evidence/06-black-paint.png",
+     "bbox": {
+      "x": 470,
+      "y": 510,
+      "width": 60,
+      "height": 16
+     },
+     "sourceWidth": 1280,
+     "sourceHeight": 853,
+     "loaderWarnings": [],
+     "coverage": 0.0009
+    },
+    "observations": [
+     "near-neutral colour response",
+     "directional surface frequency",
+     "visible meso/micro variation",
+     "strong image-space gradient; verify it is material pattern, not lighting",
+     "single-image PBR inference requires controlled render validation"
+    ],
+    "hypothesis": {
+     "componentId": "swingarm-l",
+     "regionId": "black-paint",
+     "materialId": "coating.painted-metal",
+     "family": "coating",
+     "subtype": "paint-over-metal",
+     "finish": "satin",
+     "aliases": [],
+     "confidence": 0.86,
+     "source": "vision"
+    },
+    "alternatives": []
+   },
+   "materialFamily": "coating",
+   "materialFinish": "gloss-or-satin",
+   "materialReference": {
+    "registry": "/home/user/formafind/.claude/skills/img2threejs/docs/materials/material-reference.json",
+    "profileId": "coating.painted-metal",
+    "method": "explicit-material-id",
+    "confidence": 1.0,
+    "sourceRefs": [
+     "three.mesh-physical",
+     "gltf.2",
+     "khronos.gltf-pbr",
+     "adobe.pbr-guide-1",
+     "adobe.pbr-guide-2"
+    ],
+    "requiredMaps": [
+     "map",
+     "roughnessMap"
+    ],
+    "optionalMaps": [
+     "normalMap",
+     "clearcoatMap",
+     "clearcoatRoughnessMap",
+     "metalnessMap"
+    ],
+    "validationViews": [
+     "albedo-unlit",
+     "neutral-studio",
+     "grazing",
+     "environment-reflection",
+     "reference-beauty"
+    ]
+   },
+   "materialSubtype": "paint-over-metal",
+   "referenceMaterialId": "coating.painted-metal",
+   "textureAnalysis": {
+    "finishClass": "worn-composite",
+    "recipe": {
+     "metalness": 0.0,
+     "roughness": 0.9,
+     "clearcoat": 0.0,
+     "clearcoatRoughness": 0.0,
+     "transmission": 0.0,
+     "ior": 1.5,
+     "envMapIntensity": 0.5,
+     "anisotropy": 0.0,
+     "procedural": "mottle"
+    },
+    "palette": [
+     "#5A5850",
+     "#343431",
+     "#262729",
+     "#444646",
+     "#3C3E40"
+    ],
+    "paletteHueRisk": [],
+    "gradientAxis": "horizontal",
+    "stats": {
+     "meanLum": 54.0,
+     "meanSaturation": 0.089,
+     "gradientStrength": 0.232,
+     "mottle": 0.054,
+     "streakRatio": 2.67,
+     "hueSpread": 0.891,
+     "specularFraction": 0.001
+    }
+   },
+   "ior": {
+    "base": 1.5,
+    "variation": 0.0
+   },
+   "roughness": {
+    "base": 0.45,
+    "variation": 0.05,
+    "map": {
+     "path": "/home/user/formafind/models/vent-baja/material-evidence/spec-black-frame/black-frame_roughness.png",
+     "url": "black-frame_roughness.png",
+     "channel": "roughness",
+     "source": "reference-pixel-extraction"
+    },
+    "localResponse": "reference-derived roughness estimate; cavities and textured zones trend rougher, bright highlights trend smoother"
+   }
+  },
+  "yellow-spring": {
+   "referencePbr": {
+    "version": "1.0",
+    "sourceImage": "/home/user/formafind/models/vent-baja/material-evidence/07-yellow-spring.png",
+    "extractor": "stage1_intake/extract_pbr_evidence.py",
+    "method": "single-image pixel evidence with de-lighting estimate; not photogrammetry",
+    "usable": true,
+    "verdict": "pass",
+    "confidence": 0.86,
+    "estimatedFidelity": 0.86,
+    "targetThreshold": 0.7,
+    "hardLimit": "A single image cannot uniquely recover true albedo/roughness/normal/AO; maps are reference-derived estimates.",
+    "maps": {
+     "albedo": {
+      "path": "/home/user/formafind/models/vent-baja/material-evidence/pbr-07-yellow-spring/yellow-spring_albedo.png",
+      "url": "yellow-spring_albedo.png",
+      "channel": "albedo",
+      "source": "reference-pixel-extraction"
+     },
+     "roughness": {
+      "path": "/home/user/formafind/models/vent-baja/material-evidence/pbr-07-yellow-spring/yellow-spring_roughness.png",
+      "url": "yellow-spring_roughness.png",
+      "channel": "roughness",
+      "source": "reference-pixel-extraction"
+     },
+     "height": {
+      "path": "/home/user/formafind/models/vent-baja/material-evidence/pbr-07-yellow-spring/yellow-spring_height.png",
+      "url": "yellow-spring_height.png",
+      "channel": "height",
+      "source": "reference-pixel-extraction"
+     },
+     "normal": {
+      "path": "/home/user/formafind/models/vent-baja/material-evidence/pbr-07-yellow-spring/yellow-spring_normal.png",
+      "url": "yellow-spring_normal.png",
+      "channel": "normal",
+      "source": "reference-pixel-extraction"
+     },
+     "ao": {
+      "path": "/home/user/formafind/models/vent-baja/material-evidence/pbr-07-yellow-spring/yellow-spring_ao.png",
+      "url": "yellow-spring_ao.png",
+      "channel": "ao",
+      "source": "reference-pixel-extraction"
+     }
+    },
+    "diagnostics": {
+     "sourceWidth": 18,
+     "sourceHeight": 18,
+     "mapSize": 512,
+     "cropBBoxPixels": {
+      "x": 0,
+      "y": 0,
+      "width": 18,
+      "height": 18
+     },
+     "mask": {
+      "backgroundColor": "#A47521",
+      "backgroundNoise": 155.325,
+      "transparentPixelFraction": 0.0,
+      "foregroundCoverage": 0.6173
+     },
+     "mapStats": {
+      "valueRange": 0.4892,
+      "heightP90Gradient": 0.03565,
+      "roughnessBase": 0.696,
+      "roughnessVariation": 0.067,
+      "normalStrength": 0.198,
+      "blurRadius": 10
+     },
+     "palette": [
+      "#111110",
+      "#241E15",
+      "#B48316",
+      "#88610E",
+      "#533C17"
+     ]
+    },
+    "warnings": [
+     "single-image inverse rendering cannot prove true physical PBR; confidence is capped"
+    ]
+   },
+   "materialEvidence": {
+    "componentId": "shock-spring",
+    "regionId": "yellow-spring",
+    "crop": {
+     "path": "/home/user/formafind/models/vent-baja/material-evidence/07-yellow-spring.png",
+     "bbox": {
+      "x": 588,
+      "y": 418,
+      "width": 18,
+      "height": 18
+     },
+     "sourceWidth": 1280,
+     "sourceHeight": 853,
+     "loaderWarnings": [],
+     "coverage": 0.0003
+    },
+    "observations": [
+     "chromatic base-colour response",
+     "strong image-space gradient; verify it is material pattern, not lighting",
+     "single-image PBR inference requires controlled render validation"
+    ],
+    "hypothesis": {
+     "componentId": "shock-spring",
+     "regionId": "yellow-spring",
+     "materialId": "coating.painted-metal",
+     "family": "coating",
+     "subtype": "paint-over-metal",
+     "finish": "gloss",
+     "aliases": [],
+     "confidence": 0.86,
+     "source": "vision"
+    },
+    "alternatives": []
+   },
+   "materialFamily": "coating",
+   "materialFinish": "gloss-or-satin",
+   "materialReference": {
+    "registry": "/home/user/formafind/.claude/skills/img2threejs/docs/materials/material-reference.json",
+    "profileId": "coating.painted-metal",
+    "method": "explicit-material-id",
+    "confidence": 1.0,
+    "sourceRefs": [
+     "three.mesh-physical",
+     "gltf.2",
+     "khronos.gltf-pbr",
+     "adobe.pbr-guide-1",
+     "adobe.pbr-guide-2"
+    ],
+    "requiredMaps": [
+     "map",
+     "roughnessMap"
+    ],
+    "optionalMaps": [
+     "normalMap",
+     "clearcoatMap",
+     "clearcoatRoughnessMap",
+     "metalnessMap"
+    ],
+    "validationViews": [
+     "albedo-unlit",
+     "neutral-studio",
+     "grazing",
+     "environment-reflection",
+     "reference-beauty"
+    ]
+   },
+   "materialSubtype": "paint-over-metal",
+   "referenceMaterialId": "coating.painted-metal",
+   "textureAnalysis": {
+    "finishClass": "painted-metal",
+    "recipe": {
+     "metalness": 0.0,
+     "roughness": 0.5,
+     "clearcoat": 1.0,
+     "clearcoatRoughness": 0.05,
+     "transmission": 0.0,
+     "ior": 1.5,
+     "envMapIntensity": 1.0,
+     "anisotropy": 0.0,
+     "procedural": "flat-clearcoat"
+    },
+    "palette": [
+     "#6C5118",
+     "#664C13",
+     "#30230F",
+     "#181815",
+     "#1F1E1F"
+    ],
+    "paletteHueRisk": [],
+    "gradientAxis": "horizontal",
+    "stats": {
+     "meanLum": 51.0,
+     "meanSaturation": 0.419,
+     "gradientStrength": 0.232,
+     "mottle": 0.008,
+     "streakRatio": 0.69,
+     "hueSpread": 0.123,
+     "specularFraction": 0.0
+    }
+   },
+   "ior": {
+    "base": 1.5,
+    "variation": 0.0
+   },
+   "roughness": {
+    "base": 0.45,
+    "variation": 0.05,
+    "map": {
+     "path": "/home/user/formafind/models/vent-baja/material-evidence/spec-yellow-spring/yellow-spring_roughness.png",
+     "url": "yellow-spring_roughness.png",
+     "channel": "roughness",
+     "source": "reference-pixel-extraction"
+    },
+    "localResponse": "reference-derived roughness estimate; cavities and textured zones trend rougher, bright highlights trend smoother"
+   }
+  },
+  "brushed-steel": {
+   "referencePbr": {
+    "version": "1.0",
+    "sourceImage": "/home/user/formafind/models/vent-baja/material-evidence/08-steel-disc.png",
+    "extractor": "stage1_intake/extract_pbr_evidence.py",
+    "method": "single-image pixel evidence with de-lighting estimate; not photogrammetry",
+    "usable": true,
+    "verdict": "pass",
+    "confidence": 0.86,
+    "estimatedFidelity": 0.86,
+    "targetThreshold": 0.7,
+    "hardLimit": "A single image cannot uniquely recover true albedo/roughness/normal/AO; maps are reference-derived estimates.",
+    "maps": {
+     "albedo": {
+      "path": "/home/user/formafind/models/vent-baja/material-evidence/pbr-08-steel-disc/brushed-steel_albedo.png",
+      "url": "brushed-steel_albedo.png",
+      "channel": "albedo",
+      "source": "reference-pixel-extraction"
+     },
+     "roughness": {
+      "path": "/home/user/formafind/models/vent-baja/material-evidence/pbr-08-steel-disc/brushed-steel_roughness.png",
+      "url": "brushed-steel_roughness.png",
+      "channel": "roughness",
+      "source": "reference-pixel-extraction"
+     },
+     "height": {
+      "path": "/home/user/formafind/models/vent-baja/material-evidence/pbr-08-steel-disc/brushed-steel_height.png",
+      "url": "brushed-steel_height.png",
+      "channel": "height",
+      "source": "reference-pixel-extraction"
+     },
+     "normal": {
+      "path": "/home/user/formafind/models/vent-baja/material-evidence/pbr-08-steel-disc/brushed-steel_normal.png",
+      "url": "brushed-steel_normal.png",
+      "channel": "normal",
+      "source": "reference-pixel-extraction"
+     },
+     "ao": {
+      "path": "/home/user/formafind/models/vent-baja/material-evidence/pbr-08-steel-disc/brushed-steel_ao.png",
+      "url": "brushed-steel_ao.png",
+      "channel": "ao",
+      "source": "reference-pixel-extraction"
+     }
+    },
+    "diagnostics": {
+     "sourceWidth": 30,
+     "sourceHeight": 22,
+     "mapSize": 512,
+     "cropBBoxPixels": {
+      "x": 0,
+      "y": 0,
+      "width": 30,
+      "height": 22
+     },
+     "mask": {
+      "backgroundColor": "#2B2C2C",
+      "backgroundNoise": 61.782,
+      "transparentPixelFraction": 0.0,
+      "foregroundCoverage": 0.1621
+     },
+     "mapStats": {
+      "valueRange": 0.8258,
+      "heightP90Gradient": 0.04915,
+      "roughnessBase": 0.68,
+      "roughnessVariation": 0.082,
+      "normalStrength": 0.214,
+      "blurRadius": 10
+     },
+     "palette": [
+      "#0B0D0E",
+      "#A1ABA9",
+      "#888E8C",
+      "#D0D9DB",
+      "#2E353A"
+     ]
+    },
+    "warnings": [
+     "single-image inverse rendering cannot prove true physical PBR; confidence is capped"
+    ]
+   },
+   "materialEvidence": {
+    "componentId": "disc-rear",
+    "regionId": "steel-disc",
+    "crop": {
+     "path": "/home/user/formafind/models/vent-baja/material-evidence/08-steel-disc.png",
+     "bbox": {
+      "x": 395,
+      "y": 585,
+      "width": 30,
+      "height": 22
+     },
+     "sourceWidth": 1280,
+     "sourceHeight": 853,
+     "loaderWarnings": [],
+     "coverage": 0.0006
+    },
+    "observations": [
+     "near-neutral colour response",
+     "directional surface frequency",
+     "strong image-space gradient; verify it is material pattern, not lighting",
+     "single-image PBR inference requires controlled render validation"
+    ],
+    "hypothesis": {
+     "componentId": "disc-rear",
+     "regionId": "steel-disc",
+     "materialId": "metal.steel-brushed",
+     "family": "metal",
+     "subtype": "steel",
+     "finish": "metallic",
+     "aliases": [],
+     "confidence": 0.86,
+     "source": "vision"
+    },
+    "alternatives": []
+   },
+   "materialFamily": "metal",
+   "materialFinish": "brushed",
+   "materialReference": {
+    "registry": "/home/user/formafind/.claude/skills/img2threejs/docs/materials/material-reference.json",
+    "profileId": "metal.steel-brushed",
+    "method": "explicit-material-id",
+    "confidence": 1.0,
+    "sourceRefs": [
+     "three.mesh-physical",
+     "three.pmrem",
+     "gltf.2",
+     "khronos.gltf-pbr",
+     "adobe.pbr-guide-2",
+     "google.filament-pbr"
+    ],
+    "requiredMaps": [
+     "map",
+     "roughnessMap",
+     "normalMap",
+     "anisotropyMap"
+    ],
+    "optionalMaps": [
+     "metalnessMap"
+    ],
+    "validationViews": [
+     "neutral-studio",
+     "grazing",
+     "environment-reflection",
+     "reference-beauty"
+    ]
+   },
+   "materialSubtype": "steel",
+   "referenceMaterialId": "metal.steel-brushed",
+   "textureAnalysis": {
+    "finishClass": "worn-composite",
+    "recipe": {
+     "metalness": 0.0,
+     "roughness": 0.9,
+     "clearcoat": 0.0,
+     "clearcoatRoughness": 0.0,
+     "transmission": 0.0,
+     "ior": 1.5,
+     "envMapIntensity": 0.5,
+     "anisotropy": 0.0,
+     "procedural": "mottle"
+    },
+    "palette": [
+     "#1E1F21",
+     "#1A1B1C",
+     "#2C2E2E",
+     "#535857",
+     "#7E8383"
+    ],
+    "paletteHueRisk": [],
+    "gradientAxis": "horizontal",
+    "stats": {
+     "meanLum": 58.4,
+     "meanSaturation": 0.083,
+     "gradientStrength": 0.472,
+     "mottle": 0.035,
+     "streakRatio": 2.11,
+     "hueSpread": 0.065,
+     "specularFraction": 0.006
+    }
+   },
+   "roughness": {
+    "base": 0.35,
+    "variation": 0.05,
+    "map": {
+     "path": "/home/user/formafind/models/vent-baja/material-evidence/spec-brushed-steel/brushed-steel_roughness.png",
+     "url": "brushed-steel_roughness.png",
+     "channel": "roughness",
+     "source": "reference-pixel-extraction"
+    },
+    "localResponse": "reference-derived roughness estimate; cavities and textured zones trend rougher, bright highlights trend smoother"
+   }
+  },
+  "chain-steel": {
+   "referencePbr": {
+    "version": "1.0",
+    "sourceImage": "/home/user/formafind/models/vent-baja/material-evidence/09-chain-links.png",
+    "extractor": "stage1_intake/extract_pbr_evidence.py",
+    "method": "single-image pixel evidence with de-lighting estimate; not photogrammetry",
+    "usable": true,
+    "verdict": "pass",
+    "confidence": 0.794,
+    "estimatedFidelity": 0.794,
+    "targetThreshold": 0.7,
+    "hardLimit": "A single image cannot uniquely recover true albedo/roughness/normal/AO; maps are reference-derived estimates.",
+    "maps": {
+     "albedo": {
+      "path": "/home/user/formafind/models/vent-baja/material-evidence/spec-chain-steel/chain-steel_albedo.png",
+      "url": "chain-steel_albedo.png",
+      "channel": "albedo",
+      "source": "reference-pixel-extraction"
+     },
+     "roughness": {
+      "path": "/home/user/formafind/models/vent-baja/material-evidence/spec-chain-steel/chain-steel_roughness.png",
+      "url": "chain-steel_roughness.png",
+      "channel": "roughness",
+      "source": "reference-pixel-extraction"
+     },
+     "height": {
+      "path": "/home/user/formafind/models/vent-baja/material-evidence/spec-chain-steel/chain-steel_height.png",
+      "url": "chain-steel_height.png",
+      "channel": "height",
+      "source": "reference-pixel-extraction"
+     },
+     "normal": {
+      "path": "/home/user/formafind/models/vent-baja/material-evidence/spec-chain-steel/chain-steel_normal.png",
+      "url": "chain-steel_normal.png",
+      "channel": "normal",
+      "source": "reference-pixel-extraction"
+     },
+     "ao": {
+      "path": "/home/user/formafind/models/vent-baja/material-evidence/spec-chain-steel/chain-steel_ao.png",
+      "url": "chain-steel_ao.png",
+      "channel": "ao",
+      "source": "reference-pixel-extraction"
+     }
+    },
+    "diagnostics": {
+     "sourceWidth": 40,
+     "sourceHeight": 14,
+     "mapSize": 1024,
+     "cropBBoxPixels": {
+      "x": 0,
+      "y": 0,
+      "width": 40,
+      "height": 14
+     },
+     "mask": {
+      "backgroundColor": "#868D8B",
+      "backgroundNoise": 189.383,
+      "transparentPixelFraction": 0.0,
+      "foregroundCoverage": 1.0
+     },
+     "mapStats": {
+      "valueRange": 0.7739,
+      "heightP90Gradient": 0.034,
+      "roughnessBase": 0.688,
+      "roughnessVariation": 0.061,
+      "normalStrength": 0.196,
+      "blurRadius": 21
+     },
+     "palette": [
+      "#FCFDFD",
+      "#4A4B4C",
+      "#3B3D3E",
+      "#989A9A",
+      "#C7CACA"
+     ]
+    },
+    "warnings": [
+     "foreground mask is tiny; material extraction is likely unreliable",
+     "image is not clearly isolated from background; using most pixels as material evidence",
+     "object/background separation is weak",
+     "single-image inverse rendering cannot prove true physical PBR; confidence is capped"
+    ]
+   },
+   "roughness": {
+    "base": 0.688,
+    "variation": 0.061,
+    "map": {
+     "path": "/home/user/formafind/models/vent-baja/material-evidence/spec-chain-steel/chain-steel_roughness.png",
+     "url": "chain-steel_roughness.png",
+     "channel": "roughness",
+     "source": "reference-pixel-extraction"
+    },
+    "localResponse": "reference-derived roughness estimate; cavities and textured zones trend rougher, bright highlights trend smoother"
+   }
+  },
+  "carbon-cap": {
+   "referencePbr": {
+    "version": "1.0",
+    "sourceImage": "/home/user/formafind/models/vent-baja/material-evidence/10-carbon-cap.png",
+    "extractor": "stage1_intake/extract_pbr_evidence.py",
+    "method": "single-image pixel evidence with de-lighting estimate; not photogrammetry",
+    "usable": true,
+    "verdict": "pass",
+    "confidence": 0.86,
+    "estimatedFidelity": 0.86,
+    "targetThreshold": 0.7,
+    "hardLimit": "A single image cannot uniquely recover true albedo/roughness/normal/AO; maps are reference-derived estimates.",
+    "maps": {
+     "albedo": {
+      "path": "/home/user/formafind/models/vent-baja/material-evidence/pbr-10-carbon-cap/carbon-cap_albedo.png",
+      "url": "carbon-cap_albedo.png",
+      "channel": "albedo",
+      "source": "reference-pixel-extraction"
+     },
+     "roughness": {
+      "path": "/home/user/formafind/models/vent-baja/material-evidence/pbr-10-carbon-cap/carbon-cap_roughness.png",
+      "url": "carbon-cap_roughness.png",
+      "channel": "roughness",
+      "source": "reference-pixel-extraction"
+     },
+     "height": {
+      "path": "/home/user/formafind/models/vent-baja/material-evidence/pbr-10-carbon-cap/carbon-cap_height.png",
+      "url": "carbon-cap_height.png",
+      "channel": "height",
+      "source": "reference-pixel-extraction"
+     },
+     "normal": {
+      "path": "/home/user/formafind/models/vent-baja/material-evidence/pbr-10-carbon-cap/carbon-cap_normal.png",
+      "url": "carbon-cap_normal.png",
+      "channel": "normal",
+      "source": "reference-pixel-extraction"
+     },
+     "ao": {
+      "path": "/home/user/formafind/models/vent-baja/material-evidence/pbr-10-carbon-cap/carbon-cap_ao.png",
+      "url": "carbon-cap_ao.png",
+      "channel": "ao",
+      "source": "reference-pixel-extraction"
+     }
+    },
+    "diagnostics": {
+     "sourceWidth": 26,
+     "sourceHeight": 26,
+     "mapSize": 512,
+     "cropBBoxPixels": {
+      "x": 0,
+      "y": 0,
+      "width": 14,
+      "height": 23
+     },
+     "mask": {
+      "backgroundColor": "#414344",
+      "backgroundNoise": 13.928,
+      "transparentPixelFraction": 0.0,
+      "foregroundCoverage": 0.1982
+     },
+     "mapStats": {
+      "valueRange": 0.4372,
+      "heightP90Gradient": 0.03377,
+      "roughnessBase": 0.684,
+      "roughnessVariation": 0.054,
+      "normalStrength": 0.196,
+      "blurRadius": 10
+     },
+     "palette": [
+      "#2A2621",
+      "#201D18",
+      "#322F2C",
+      "#7B7873",
+      "#0F0D09"
+     ]
+    },
+    "warnings": [
+     "single-image inverse rendering cannot prove true physical PBR; confidence is capped"
+    ]
+   },
+   "materialEvidence": {
+    "componentId": "silencer-cap",
+    "regionId": "carbon-cap",
+    "crop": {
+     "path": "/home/user/formafind/models/vent-baja/material-evidence/10-carbon-cap.png",
+     "bbox": {
+      "x": 398,
+      "y": 272,
+      "width": 26,
+      "height": 26
+     },
+     "sourceWidth": 1280,
+     "sourceHeight": 853,
+     "loaderWarnings": [],
+     "coverage": 0.0006
+    },
+    "observations": [
+     "near-neutral colour response",
+     "single-image PBR inference requires controlled render validation"
+    ],
+    "hypothesis": {
+     "componentId": "silencer-cap",
+     "regionId": "carbon-cap",
+     "materialId": "plastic.glossy",
+     "family": "plastic",
+     "subtype": "carbon-composite",
+     "finish": "satin",
+     "aliases": [],
+     "confidence": 0.86,
+     "source": "vision"
+    },
+    "alternatives": []
+   },
+   "materialFamily": "plastic",
+   "materialFinish": "glossy",
+   "materialReference": {
+    "registry": "/home/user/formafind/.claude/skills/img2threejs/docs/materials/material-reference.json",
+    "profileId": "plastic.glossy",
+    "method": "explicit-material-id",
+    "confidence": 1.0,
+    "sourceRefs": [
+     "three.mesh-physical",
+     "three.mesh-standard",
+     "adobe.pbr-guide-1",
+     "google.filament-pbr",
+     "mit.material-recognition"
+    ],
+    "requiredMaps": [
+     "map",
+     "roughnessMap"
+    ],
+    "optionalMaps": [
+     "normalMap",
+     "clearcoatMap"
+    ],
+    "validationViews": [
+     "neutral-studio",
+     "grazing",
+     "environment-reflection",
+     "reference-beauty"
+    ]
+   },
+   "materialSubtype": "generic-polymer",
+   "referenceMaterialId": "plastic.glossy",
+   "textureAnalysis": {
+    "finishClass": "worn-composite",
+    "recipe": {
+     "metalness": 0.0,
+     "roughness": 0.9,
+     "clearcoat": 0.0,
+     "clearcoatRoughness": 0.0,
+     "transmission": 0.0,
+     "ior": 1.5,
+     "envMapIntensity": 0.5,
+     "anisotropy": 0.0,
+     "procedural": "mottle"
+    },
+    "palette": [
+     "#2A2822",
+     "#2C2823",
+     "#35322E",
+     "#373633",
+     "#3D3D3C"
+    ],
+    "paletteHueRisk": [],
+    "gradientAxis": "horizontal",
+    "stats": {
+     "meanLum": 52.7,
+     "meanSaturation": 0.147,
+     "gradientStrength": 0.122,
+     "mottle": 0.011,
+     "streakRatio": 0.67,
+     "hueSpread": 0.043,
+     "specularFraction": 0.0
+    }
+   },
+   "ior": {
+    "base": 1.5,
+    "variation": 0.0
+   },
+   "roughness": {
+    "base": 0.28,
+    "variation": 0.05,
+    "map": {
+     "path": "/home/user/formafind/models/vent-baja/material-evidence/spec-carbon-cap/carbon-cap_roughness.png",
+     "url": "carbon-cap_roughness.png",
+     "channel": "roughness",
+     "source": "reference-pixel-extraction"
+    },
+    "localResponse": "reference-derived roughness estimate; cavities and textured zones trend rougher, bright highlights trend smoother"
+   }
+  },
+  "reflector-red": {
+   "referencePbr": {
+    "version": "1.0",
+    "sourceImage": "/home/user/formafind/models/vent-baja/material-evidence/11-red-reflector.png",
+    "extractor": "stage1_intake/extract_pbr_evidence.py",
+    "method": "single-image pixel evidence with de-lighting estimate; not photogrammetry",
+    "usable": true,
+    "verdict": "pass",
+    "confidence": 0.86,
+    "estimatedFidelity": 0.86,
+    "targetThreshold": 0.7,
+    "hardLimit": "A single image cannot uniquely recover true albedo/roughness/normal/AO; maps are reference-derived estimates.",
+    "maps": {
+     "albedo": {
+      "path": "/home/user/formafind/models/vent-baja/material-evidence/pbr-11-red-reflector/reflector-red_albedo.png",
+      "url": "reflector-red_albedo.png",
+      "channel": "albedo",
+      "source": "reference-pixel-extraction"
+     },
+     "roughness": {
+      "path": "/home/user/formafind/models/vent-baja/material-evidence/pbr-11-red-reflector/reflector-red_roughness.png",
+      "url": "reflector-red_roughness.png",
+      "channel": "roughness",
+      "source": "reference-pixel-extraction"
+     },
+     "height": {
+      "path": "/home/user/formafind/models/vent-baja/material-evidence/pbr-11-red-reflector/reflector-red_height.png",
+      "url": "reflector-red_height.png",
+      "channel": "height",
+      "source": "reference-pixel-extraction"
+     },
+     "normal": {
+      "path": "/home/user/formafind/models/vent-baja/material-evidence/pbr-11-red-reflector/reflector-red_normal.png",
+      "url": "reflector-red_normal.png",
+      "channel": "normal",
+      "source": "reference-pixel-extraction"
+     },
+     "ao": {
+      "path": "/home/user/formafind/models/vent-baja/material-evidence/pbr-11-red-reflector/reflector-red_ao.png",
+      "url": "reflector-red_ao.png",
+      "channel": "ao",
+      "source": "reference-pixel-extraction"
+     }
+    },
+    "diagnostics": {
+     "sourceWidth": 30,
+     "sourceHeight": 14,
+     "mapSize": 512,
+     "cropBBoxPixels": {
+      "x": 0,
+      "y": 0,
+      "width": 30,
+      "height": 14
+     },
+     "mask": {
+      "backgroundColor": "#634744",
+      "backgroundNoise": 82.498,
+      "transparentPixelFraction": 0.0,
+      "foregroundCoverage": 0.7976
+     },
+     "mapStats": {
+      "valueRange": 0.94,
+      "heightP90Gradient": 0.03425,
+      "roughnessBase": 0.695,
+      "roughnessVariation": 0.065,
+      "normalStrength": 0.196,
+      "blurRadius": 10
+     },
+     "palette": [
+      "#570712",
+      "#68262E",
+      "#360A0D",
+      "#93464F",
+      "#F9F8F8"
+     ]
+    },
+    "warnings": [
+     "single-image inverse rendering cannot prove true physical PBR; confidence is capped"
+    ]
+   },
+   "materialEvidence": {
+    "componentId": "plate-reflector",
+    "regionId": "red-reflector",
+    "crop": {
+     "path": "/home/user/formafind/models/vent-baja/material-evidence/11-red-reflector.png",
+     "bbox": {
+      "x": 200,
+      "y": 322,
+      "width": 30,
+      "height": 14
+     },
+     "sourceWidth": 1280,
+     "sourceHeight": 853,
+     "loaderWarnings": [],
+     "coverage": 0.0004
+    },
+    "observations": [
+     "chromatic base-colour response",
+     "strong image-space gradient; verify it is material pattern, not lighting",
+     "single-image PBR inference requires controlled render validation"
+    ],
+    "hypothesis": {
+     "componentId": "plate-reflector",
+     "regionId": "red-reflector",
+     "materialId": "plastic.glossy",
+     "family": "plastic",
+     "subtype": "translucent-plastic",
+     "finish": "gloss",
+     "aliases": [],
+     "confidence": 0.86,
+     "source": "vision"
+    },
+    "alternatives": []
+   },
+   "materialFamily": "plastic",
+   "materialFinish": "glossy",
+   "materialReference": {
+    "registry": "/home/user/formafind/.claude/skills/img2threejs/docs/materials/material-reference.json",
+    "profileId": "plastic.glossy",
+    "method": "explicit-material-id",
+    "confidence": 1.0,
+    "sourceRefs": [
+     "three.mesh-physical",
+     "three.mesh-standard",
+     "adobe.pbr-guide-1",
+     "google.filament-pbr",
+     "mit.material-recognition"
+    ],
+    "requiredMaps": [
+     "map",
+     "roughnessMap"
+    ],
+    "optionalMaps": [
+     "normalMap",
+     "clearcoatMap"
+    ],
+    "validationViews": [
+     "neutral-studio",
+     "grazing",
+     "environment-reflection",
+     "reference-beauty"
+    ]
+   },
+   "materialSubtype": "generic-polymer",
+   "referenceMaterialId": "plastic.glossy",
+   "textureAnalysis": {
+    "finishClass": "painted-metal",
+    "recipe": {
+     "metalness": 0.0,
+     "roughness": 0.5,
+     "clearcoat": 1.0,
+     "clearcoatRoughness": 0.05,
+     "transmission": 0.0,
+     "ior": 1.5,
+     "envMapIntensity": 1.0,
+     "anisotropy": 0.0,
+     "procedural": "flat-clearcoat"
+    },
+    "palette": [
+     "#BFADAF",
+     "#75393F",
+     "#6A2D32",
+     "#5B2A33",
+     "#583C3F"
+    ],
+    "paletteHueRisk": [],
+    "gradientAxis": "horizontal",
+    "stats": {
+     "meanLum": 74.6,
+     "meanSaturation": 0.571,
+     "gradientStrength": 0.515,
+     "mottle": 0.032,
+     "streakRatio": 1.45,
+     "hueSpread": 0.013,
+     "specularFraction": 0.072
+    }
+   },
+   "ior": {
+    "base": 1.5,
+    "variation": 0.0
+   },
+   "roughness": {
+    "base": 0.28,
+    "variation": 0.05,
+    "map": {
+     "path": "/home/user/formafind/models/vent-baja/material-evidence/spec-reflector-red/reflector-red_roughness.png",
+     "url": "reflector-red_roughness.png",
+     "channel": "roughness",
+     "source": "reference-pixel-extraction"
+    },
+    "localResponse": "reference-derived roughness estimate; cavities and textured zones trend rougher, bright highlights trend smoother"
+   }
+  }
+ },
+ "components": {
+  "root": {},
+  "frame-head-tube": {},
+  "frame-spar-l": {},
+  "frame-subframe-l": {},
+  "frame-strut-l": {},
+  "frame-spar-r": {},
+  "frame-subframe-r": {},
+  "frame-strut-r": {},
+  "frame-downtube": {},
+  "engine-cases": {},
+  "engine-cylinder": {},
+  "engine-head": {},
+  "engine-clutch-cover": {},
+  "engine-badge": {},
+  "radiator": {},
+  "exhaust-chamber": {},
+  "silencer": {
+   "materialRegions": [
+    {
+     "regionId": "white-gloss",
+     "materialId": "white-plastic",
+     "profileId": "plastic.glossy",
+     "crop": {
+      "path": "/home/user/formafind/models/vent-baja/material-evidence/01-white-gloss.png",
+      "bbox": {
+       "x": 525,
+       "y": 356,
+       "width": 24,
+       "height": 12
+      },
+      "sourceWidth": 1280,
+      "sourceHeight": 853,
+      "loaderWarnings": [],
+      "coverage": 0.0003
+     }
+    }
+   ],
+   "uvContract": {
+    "status": "unwrapped",
+    "strategy": "generated procedural coordinates",
+    "materialId": "white-plastic"
+   }
+  },
+  "silencer-cap": {
+   "materialRegions": [
+    {
+     "regionId": "carbon-cap",
+     "materialId": "carbon-cap",
+     "profileId": "plastic.glossy",
+     "crop": {
+      "path": "/home/user/formafind/models/vent-baja/material-evidence/10-carbon-cap.png",
+      "bbox": {
+       "x": 398,
+       "y": 272,
+       "width": 26,
+       "height": 26
+      },
+      "sourceWidth": 1280,
+      "sourceHeight": 853,
+      "loaderWarnings": [],
+      "coverage": 0.0006
+     }
+    }
+   ],
+   "uvContract": {
+    "status": "unwrapped",
+    "strategy": "generated procedural coordinates",
+    "materialId": "carbon-cap"
+   }
+  },
+  "silencer-sticker-patch": {},
+  "swingarm-l": {
+   "materialRegions": [
+    {
+     "regionId": "black-paint",
+     "materialId": "black-frame",
+     "profileId": "coating.painted-metal",
+     "crop": {
+      "path": "/home/user/formafind/models/vent-baja/material-evidence/06-black-paint.png",
+      "bbox": {
+       "x": 470,
+       "y": 510,
+       "width": 60,
+       "height": 16
+      },
+      "sourceWidth": 1280,
+      "sourceHeight": 853,
+      "loaderWarnings": [],
+      "coverage": 0.0009
+     }
+    }
+   ],
+   "uvContract": {
+    "status": "unwrapped",
+    "strategy": "generated procedural coordinates",
+    "materialId": "black-frame"
+   }
+  },
+  "swingarm-r": {},
+  "swingarm-brace": {},
+  "shock-body": {},
+  "shock-spring": {
+   "materialRegions": [
+    {
+     "regionId": "yellow-spring",
+     "materialId": "yellow-spring",
+     "profileId": "coating.painted-metal",
+     "crop": {
+      "path": "/home/user/formafind/models/vent-baja/material-evidence/07-yellow-spring.png",
+      "bbox": {
+       "x": 588,
+       "y": 418,
+       "width": 18,
+       "height": 18
+      },
+      "sourceWidth": 1280,
+      "sourceHeight": 853,
+      "loaderWarnings": [],
+      "coverage": 0.0003
+     }
+    }
+   ],
+   "uvContract": {
+    "status": "unwrapped",
+    "strategy": "generated procedural coordinates",
+    "materialId": "yellow-spring"
+   }
+  },
+  "rear-hub": {},
+  "rear-tyre": {},
+  "rear-rim": {},
+  "rear-disc": {},
+  "rear-sprocket": {},
+  "chain": {
+   "materialRegions": [
+    {
+     "regionId": "chain-links",
+     "materialId": "chain-steel",
+     "profileId": "metal.brass",
+     "crop": {
+      "path": "/home/user/formafind/models/vent-baja/material-evidence/09-chain-links.png",
+      "bbox": {
+       "x": 318,
+       "y": 490,
+       "width": 40,
+       "height": 14
+      },
+      "sourceWidth": 1280,
+      "sourceHeight": 853,
+      "loaderWarnings": [],
+      "coverage": 0.0005
+     }
+    }
+   ],
+   "uvContract": {
+    "status": "unwrapped",
+    "strategy": "generated procedural coordinates",
+    "materialId": "chain-steel"
+   }
+  },
+  "front-sprocket": {},
+  "front-hub": {},
+  "front-tyre": {},
+  "front-rim": {},
+  "front-disc": {},
+  "fork-lower-l": {},
+  "fork-upper-l": {
+   "materialRegions": [
+    {
+     "regionId": "gold-tube",
+     "materialId": "gold-anodized",
+     "profileId": "metal.gold",
+     "crop": {
+      "path": "/home/user/formafind/models/vent-baja/material-evidence/04-gold-tube.png",
+      "bbox": {
+       "x": 868,
+       "y": 215,
+       "width": 14,
+       "height": 70
+      },
+      "sourceWidth": 1280,
+      "sourceHeight": 853,
+      "loaderWarnings": [],
+      "coverage": 0.0009
+     }
+    }
+   ],
+   "uvContract": {
+    "status": "unwrapped",
+    "strategy": "generated procedural coordinates",
+    "materialId": "gold-anodized"
+   }
+  },
+  "fork-guard-l": {},
+  "fork-guard-stripe-l": {},
+  "fork-lower-r": {},
+  "fork-upper-r": {},
+  "fork-guard-r": {},
+  "fork-guard-stripe-r": {},
+  "clamp-lower": {},
+  "clamp-upper": {},
+  "handlebar": {},
+  "grip-l": {},
+  "lever-l": {},
+  "lever-perch-l": {},
+  "grip-r": {},
+  "lever-r": {},
+  "lever-perch-r": {},
+  "headlight-mask": {},
+  "front-fender": {},
+  "tank": {},
+  "fuel-cap": {},
+  "seat": {
+   "materialRegions": [
+    {
+     "regionId": "seat-vinyl",
+     "materialId": "seat-vinyl",
+     "profileId": "leather.matte",
+     "crop": {
+      "path": "/home/user/formafind/models/vent-baja/material-evidence/03-seat-vinyl.png",
+      "bbox": {
+       "x": 480,
+       "y": 213,
+       "width": 80,
+       "height": 16
+      },
+      "sourceWidth": 1280,
+      "sourceHeight": 853,
+      "loaderWarnings": [],
+      "coverage": 0.0012
+     }
+    }
+   ],
+   "uvContract": {
+    "status": "unwrapped",
+    "strategy": "generated procedural coordinates",
+    "materialId": "seat-vinyl"
+   }
+  },
+  "shroud-l": {},
+  "side-panel-l": {
+   "materialRegions": [
+    {
+     "regionId": "red-gloss",
+     "materialId": "red-plastic",
+     "profileId": "plastic.glossy",
+     "crop": {
+      "path": "/home/user/formafind/models/vent-baja/material-evidence/00-red-gloss.png",
+      "bbox": {
+       "x": 335,
+       "y": 250,
+       "width": 50,
+       "height": 22
+      },
+      "sourceWidth": 1280,
+      "sourceHeight": 853,
+      "loaderWarnings": [],
+      "coverage": 0.001
+     }
+    },
+    {
+     "regionId": "grey-stripe",
+     "materialId": "grey-plastic",
+     "profileId": "plastic.matte",
+     "crop": {
+      "path": "/home/user/formafind/models/vent-baja/material-evidence/02-grey-stripe.png",
+      "bbox": {
+       "x": 545,
+       "y": 258,
+       "width": 40,
+       "height": 12
+      },
+      "sourceWidth": 1280,
+      "sourceHeight": 853,
+      "loaderWarnings": [],
+      "coverage": 0.0004
+     }
+    }
+   ],
+   "uvContract": {
+    "status": "unwrapped",
+    "strategy": "generated procedural coordinates",
+    "materialId": "red-plastic"
+   }
+  },
+  "shroud-r": {},
+  "side-panel-r": {},
+  "rear-fender": {},
+  "plate-hanger": {},
+  "plate-reflector": {
+   "materialRegions": [
+    {
+     "regionId": "red-reflector",
+     "materialId": "reflector-red",
+     "profileId": "plastic.glossy",
+     "crop": {
+      "path": "/home/user/formafind/models/vent-baja/material-evidence/11-red-reflector.png",
+      "bbox": {
+       "x": 200,
+       "y": 322,
+       "width": 30,
+       "height": 14
+      },
+      "sourceWidth": 1280,
+      "sourceHeight": 853,
+      "loaderWarnings": [],
+      "coverage": 0.0004
+     }
+    }
+   ],
+   "uvContract": {
+    "status": "unwrapped",
+    "strategy": "generated procedural coordinates",
+    "materialId": "reflector-red"
+   }
+  },
+  "tail-light": {},
+  "livery-shroud-white": {},
+  "livery-shroud-grey": {},
+  "livery-shroud-lower-white": {},
+  "livery-panel-grey-stripe": {},
+  "livery-panel-white-lower": {},
+  "logo-v0": {},
+  "logo-e1": {},
+  "logo-n2": {},
+  "logo-t3": {},
+  "footpeg-l": {},
+  "footpeg-r": {},
+  "brake-pedal": {},
+  "rear-caliper": {},
+  "front-caliper": {}
+ }
+}

@@ -1,0 +1,12 @@
+import { chromium } from 'playwright';
+import fs from 'fs';
+const photo = JSON.parse(fs.readFileSync(process.argv[2], 'utf8')).mask;
+const start = JSON.parse(process.argv[3]);
+const browser = await chromium.launch({ executablePath: '/opt/pw-browsers/chromium-1194/chrome-linux/chrome', args: ['--use-gl=angle', '--use-angle=swiftshader', '--enable-unsafe-swiftshader'] });
+const page = await browser.newPage({ viewport: { width: 640, height: 427 } });
+page.on('pageerror', (e) => console.log('pageerror:', e.message));
+await page.goto(`file://${process.cwd()}/fit.html?w=640&h=427&shadow=0`);
+await page.waitForFunction(() => window.__ready === true, null, { timeout: 60000 });
+const res = await page.evaluate(([p, s]) => window.fit(p, s, 6), [photo, start]);
+console.log(JSON.stringify(res));
+await browser.close();

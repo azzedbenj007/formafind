@@ -1,0 +1,742 @@
+{
+  "targetName": "Vent Baja 50 Dirt Bike",
+  "sourceImage": "/home/user/formafind/models/vent-baja/reference.jpg",
+  "preSpecAssessment": {
+    "objectClass": {
+      "primaryType": "enduro dirt bike (50cc two-stroke motorcycle)",
+      "primaryDomain": "object",
+      "formLanguage": [
+        "geometric tubes",
+        "organic moulded plastics",
+        "radial wheels"
+      ],
+      "structureKind": [
+        "frame-and-panel assembly",
+        "spoked wheels",
+        "telescopic fork",
+        "swingarm suspension"
+      ],
+      "motionPotential": [
+        "wheel spin",
+        "steering",
+        "rear suspension travel"
+      ],
+      "materialFamilies": [
+        "gloss plastic",
+        "painted steel",
+        "anodized aluminium",
+        "rubber",
+        "vinyl"
+      ],
+      "notes": "Identified from direct inspection: VENT branding, Baja model shroud text."
+    },
+    "complexity": {
+      "tier": "complex",
+      "scores": {
+        "silhouetteComplexity": 3,
+        "componentCount": 3,
+        "hierarchyDepth": 2,
+        "repetitionDensity": 3,
+        "materialLayerCount": 2,
+        "localDetailDensity": 2,
+        "occlusionRisk": 2,
+        "actionReadinessNeed": 2
+      },
+      "estimatedCounts": {
+        "macroComponents": 18,
+        "mesoComponents": 27,
+        "microFeatureGroups": 36,
+        "materialLayers": 12,
+        "repetitionSystems": 5
+      },
+      "reasoning": [
+        "~90 parts across frame, suspension, wheels, engine, exhaust and bodywork",
+        "repetition-dense wheels (spokes, knobs)",
+        "one view; right side inferred"
+      ]
+    },
+    "specDepthDecision": {
+      "requiredDepth": "complex",
+      "minimumComponentLevels": [
+        "macro",
+        "meso",
+        "micro"
+      ],
+      "needsRepetitionSystems": true,
+      "needsMaterialLocalOverrides": true,
+      "needsMultipleReviewViews": true,
+      "needsActionReadyHierarchy": true,
+      "rationale": "Choose simple/moderate/complex/ultra-complex from observed structure, not from a hardcoded domain."
+    },
+    "unknownsToResolveBeforeImplementation": [],
+    "detailInventory": {
+      "scanMethod": "grid-3x3",
+      "targetMinDetails": 10,
+      "note": "Enumerate every identity-defining small detail before authoring the spec. Each detail must map to a component.localFeatures entry or material.localOverrides entry, never prose only. Use forge/stage1_intake/build_detail_inventory.py to scan zones.",
+      "details": [
+        {
+          "id": "engine-vent-badge",
+          "kind": "decal",
+          "description": "engine vent badge",
+          "region": {
+            "x": 0.52,
+            "y": 0.55,
+            "width": 0.06,
+            "height": 0.05,
+            "units": "normalized"
+          },
+          "scale": "micro",
+          "affects": "albedo",
+          "mapsTo": {
+            "type": "component.localFeatures",
+            "ref": "engine-badge/engine-vent-badge"
+          },
+          "evidenceRef": "reference.jpg",
+          "confidence": 0.7
+        },
+        {
+          "id": "radiator-fins",
+          "kind": "groove",
+          "description": "radiator fins",
+          "region": {
+            "x": 0.62,
+            "y": 0.27,
+            "width": 0.06,
+            "height": 0.15,
+            "units": "normalized"
+          },
+          "scale": "meso",
+          "affects": "geometry",
+          "mapsTo": {
+            "type": "component.localFeatures",
+            "ref": "radiator/radiator-fins"
+          },
+          "evidenceRef": "reference.jpg",
+          "confidence": 0.7
+        },
+        {
+          "id": "pipe-curl",
+          "kind": "contour",
+          "description": "pipe curl",
+          "region": {
+            "x": 0.55,
+            "y": 0.45,
+            "width": 0.12,
+            "height": 0.18,
+            "units": "normalized"
+          },
+          "scale": "meso",
+          "affects": "geometry",
+          "mapsTo": {
+            "type": "component.localFeatures",
+            "ref": "exhaust-chamber/pipe-curl"
+          },
+          "evidenceRef": "reference.jpg",
+          "confidence": 0.7
+        },
+        {
+          "id": "silencer-sticker",
+          "kind": "decal",
+          "description": "silencer sticker",
+          "region": {
+            "x": 0.33,
+            "y": 0.33,
+            "width": 0.08,
+            "height": 0.08,
+            "units": "normalized"
+          },
+          "scale": "micro",
+          "affects": "albedo",
+          "mapsTo": {
+            "type": "component.localFeatures",
+            "ref": "silencer/silencer-sticker"
+          },
+          "evidenceRef": "reference.jpg",
+          "confidence": 0.7
+        },
+        {
+          "id": "yellow-spring-coils",
+          "kind": "ridge",
+          "description": "yellow spring coils",
+          "region": {
+            "x": 0.45,
+            "y": 0.47,
+            "width": 0.04,
+            "height": 0.06,
+            "units": "normalized"
+          },
+          "scale": "meso",
+          "affects": "geometry",
+          "mapsTo": {
+            "type": "component.localFeatures",
+            "ref": "shock-spring/yellow-spring-coils"
+          },
+          "evidenceRef": "reference.jpg",
+          "confidence": 0.7
+        },
+        {
+          "id": "rear-disc-ring",
+          "kind": "gloss",
+          "description": "rear disc ring",
+          "region": {
+            "x": 0.3,
+            "y": 0.64,
+            "width": 0.08,
+            "height": 0.1,
+            "units": "normalized"
+          },
+          "scale": "meso",
+          "affects": "geometry",
+          "mapsTo": {
+            "type": "material.localOverrides",
+            "ref": "brushed-steel/disc-wave-edge"
+          },
+          "evidenceRef": "reference.jpg",
+          "confidence": 0.7
+        },
+        {
+          "id": "rear-tyre-knobs",
+          "kind": "ridge",
+          "description": "rear tyre knobs",
+          "region": {
+            "x": 0.19,
+            "y": 0.48,
+            "width": 0.23,
+            "height": 0.4,
+            "units": "normalized"
+          },
+          "scale": "meso",
+          "affects": "geometry",
+          "mapsTo": {
+            "type": "component.localFeatures",
+            "ref": "rear-tyre/rear-tyre-knobs"
+          },
+          "evidenceRef": "reference.jpg",
+          "confidence": 0.7
+        },
+        {
+          "id": "front-disc-ring",
+          "kind": "gloss",
+          "description": "front disc ring",
+          "region": {
+            "x": 0.66,
+            "y": 0.51,
+            "width": 0.08,
+            "height": 0.12,
+            "units": "normalized"
+          },
+          "scale": "meso",
+          "affects": "geometry",
+          "mapsTo": {
+            "type": "material.localOverrides",
+            "ref": "brushed-steel/disc-wave-edge"
+          },
+          "evidenceRef": "reference.jpg",
+          "confidence": 0.7
+        },
+        {
+          "id": "front-tyre-knobs",
+          "kind": "ridge",
+          "description": "front tyre knobs",
+          "region": {
+            "x": 0.63,
+            "y": 0.38,
+            "width": 0.18,
+            "height": 0.4,
+            "units": "normalized"
+          },
+          "scale": "meso",
+          "affects": "geometry",
+          "mapsTo": {
+            "type": "component.localFeatures",
+            "ref": "front-tyre/front-tyre-knobs"
+          },
+          "evidenceRef": "reference.jpg",
+          "confidence": 0.7
+        },
+        {
+          "id": "gold-stanchion-l",
+          "kind": "gloss",
+          "description": "gold stanchion l",
+          "region": {
+            "x": 0.65,
+            "y": 0.18,
+            "width": 0.05,
+            "height": 0.25,
+            "units": "normalized"
+          },
+          "scale": "meso",
+          "affects": "geometry",
+          "mapsTo": {
+            "type": "component.localFeatures",
+            "ref": "fork-upper-l/gold-stanchion-l"
+          },
+          "evidenceRef": "reference.jpg",
+          "confidence": 0.7
+        },
+        {
+          "id": "gold-stanchion-r",
+          "kind": "gloss",
+          "description": "gold stanchion r",
+          "region": {
+            "x": 0.63,
+            "y": 0.18,
+            "width": 0.04,
+            "height": 0.22,
+            "units": "normalized"
+          },
+          "scale": "meso",
+          "affects": "geometry",
+          "mapsTo": {
+            "type": "component.localFeatures",
+            "ref": "fork-upper-r/gold-stanchion-r"
+          },
+          "evidenceRef": "reference.jpg",
+          "confidence": 0.7
+        },
+        {
+          "id": "fork-guard-logo-r",
+          "kind": "decal",
+          "description": "fork guard logo r",
+          "region": {
+            "x": 0.71,
+            "y": 0.46,
+            "width": 0.05,
+            "height": 0.14,
+            "units": "normalized"
+          },
+          "scale": "micro",
+          "affects": "albedo",
+          "mapsTo": {
+            "type": "component.localFeatures",
+            "ref": "fork-guard-r/fork-guard-logo-r"
+          },
+          "evidenceRef": "reference.jpg",
+          "confidence": 0.7
+        },
+        {
+          "id": "front-fender-kick",
+          "kind": "contour",
+          "description": "front fender kick",
+          "region": {
+            "x": 0.68,
+            "y": 0.22,
+            "width": 0.1,
+            "height": 0.1,
+            "units": "normalized"
+          },
+          "scale": "meso",
+          "affects": "geometry",
+          "mapsTo": {
+            "type": "component.localFeatures",
+            "ref": "front-fender/front-fender-kick"
+          },
+          "evidenceRef": "reference.jpg",
+          "confidence": 0.7
+        },
+        {
+          "id": "seat-texture",
+          "kind": "stitch",
+          "description": "seat texture",
+          "region": {
+            "x": 0.32,
+            "y": 0.22,
+            "width": 0.24,
+            "height": 0.08,
+            "units": "normalized"
+          },
+          "scale": "micro",
+          "affects": "geometry",
+          "mapsTo": {
+            "type": "component.localFeatures",
+            "ref": "seat/seat-texture"
+          },
+          "evidenceRef": "reference.jpg",
+          "confidence": 0.7
+        },
+        {
+          "id": "rear-fender-kick",
+          "kind": "contour",
+          "description": "rear fender kick",
+          "region": {
+            "x": 0.17,
+            "y": 0.23,
+            "width": 0.18,
+            "height": 0.08,
+            "units": "normalized"
+          },
+          "scale": "meso",
+          "affects": "geometry",
+          "mapsTo": {
+            "type": "component.localFeatures",
+            "ref": "rear-fender/rear-fender-kick"
+          },
+          "evidenceRef": "reference.jpg",
+          "confidence": 0.7
+        },
+        {
+          "id": "red-reflector",
+          "kind": "emissive",
+          "description": "red reflector",
+          "region": {
+            "x": 0.16,
+            "y": 0.37,
+            "width": 0.03,
+            "height": 0.03,
+            "units": "normalized"
+          },
+          "scale": "meso",
+          "affects": "albedo",
+          "mapsTo": {
+            "type": "component.localFeatures",
+            "ref": "plate-reflector/red-reflector"
+          },
+          "evidenceRef": "reference.jpg",
+          "confidence": 0.7
+        },
+        {
+          "id": "vent-letter-0",
+          "kind": "decal",
+          "description": "vent letter 0",
+          "region": {
+            "x": 0.36,
+            "y": 0.3,
+            "width": 0.14,
+            "height": 0.12,
+            "units": "normalized"
+          },
+          "scale": "micro",
+          "affects": "albedo",
+          "mapsTo": {
+            "type": "component.localFeatures",
+            "ref": "logo-v0/vent-letter-0"
+          },
+          "evidenceRef": "reference.jpg",
+          "confidence": 0.7
+        },
+        {
+          "id": "footpeg-teeth-r",
+          "kind": "fastener",
+          "description": "footpeg teeth r",
+          "region": {
+            "x": 0.48,
+            "y": 0.6,
+            "width": 0.06,
+            "height": 0.05,
+            "units": "normalized"
+          },
+          "scale": "micro",
+          "affects": "geometry",
+          "mapsTo": {
+            "type": "component.localFeatures",
+            "ref": "footpeg-r/footpeg-teeth-r"
+          },
+          "evidenceRef": "reference.jpg",
+          "confidence": 0.7
+        },
+        {
+          "id": "tyre-knob-wear",
+          "kind": "stain",
+          "description": "tyre knob wear",
+          "region": {
+            "x": 0.2,
+            "y": 0.2,
+            "width": 0.6,
+            "height": 0.6,
+            "units": "normalized"
+          },
+          "scale": "micro",
+          "affects": "roughness",
+          "mapsTo": {
+            "type": "material.localOverrides",
+            "ref": "tyre-rubber/tyre-knob-wear"
+          },
+          "evidenceRef": "reference.jpg",
+          "confidence": 0.6
+        },
+        {
+          "id": "frame-edge-wear",
+          "kind": "stain",
+          "description": "frame edge wear",
+          "region": {
+            "x": 0.2,
+            "y": 0.2,
+            "width": 0.6,
+            "height": 0.6,
+            "units": "normalized"
+          },
+          "scale": "micro",
+          "affects": "roughness",
+          "mapsTo": {
+            "type": "material.localOverrides",
+            "ref": "black-frame/frame-edge-wear"
+          },
+          "evidenceRef": "reference.jpg",
+          "confidence": 0.6
+        },
+        {
+          "id": "red-panel-edge-gloss",
+          "kind": "gloss",
+          "description": "red panel edge gloss",
+          "region": {
+            "x": 0.2,
+            "y": 0.2,
+            "width": 0.6,
+            "height": 0.6,
+            "units": "normalized"
+          },
+          "scale": "micro",
+          "affects": "roughness",
+          "mapsTo": {
+            "type": "material.localOverrides",
+            "ref": "red-plastic/red-panel-edge-gloss"
+          },
+          "evidenceRef": "reference.jpg",
+          "confidence": 0.6
+        }
+      ]
+    },
+    "anatomy": {
+      "applies": false,
+      "styleHeads": 0.0,
+      "proportions": {
+        "headUnit": 0.0,
+        "torso": 0.0,
+        "legs": 0.0,
+        "shoulderWidth": 0.0,
+        "hipWidth": 0.0
+      },
+      "pose": {
+        "type": "unassessed",
+        "jointAngles": {}
+      },
+      "faceLandmarks": {
+        "eyeLine": 0.0,
+        "eyeSpacing": 0.0,
+        "noseBase": 0.0,
+        "mouthLine": 0.0,
+        "hairline": 0.0
+      },
+      "features": [],
+      "confidence": 0.0,
+      "note": "Only meaningful when objectClass.primaryDomain is character or hybrid. Set applies=true and fill from forge/stage1_intake/extract_landmarks.py. See grimoire/character/reconstruction.md and grimoire/character/likeness_maximization.md."
+    },
+    "sourceImage": "/home/user/formafind/models/vent-baja/reference.jpg",
+    "resolvedUnknowns": [
+      {
+        "unknown": "Left-side drivetrain detail (hidden)",
+        "resolution": "standard chain + sprocket layout on the left, visible through spokes"
+      },
+      {
+        "unknown": "Exact decal typography",
+        "resolution": "stylized italic block glyphs; flagged approximate"
+      },
+      {
+        "unknown": "Tank shape under shrouds",
+        "resolution": "simple extruded volume; it is almost fully covered"
+      }
+    ]
+  },
+  "qualityContract": {
+    "qualityBar": "complex",
+    "definitionOfDone": [
+      "The rendered model matches the reference silhouette, primary proportions, visible component hierarchy, material response, and most recognizable local features for the selected fidelity tier."
+    ],
+    "minimumSpecDepth": {
+      "macroComponents": 3,
+      "mesoComponents": 8,
+      "microFeatureGroups": 5,
+      "materialLayers": 3,
+      "repetitionSystems": 1,
+      "reviewViewpoints": 4
+    },
+    "featureGroups": [
+      {
+        "id": "overall-silhouette",
+        "name": "Overall silhouette and proportions",
+        "required": true,
+        "qualityCriteria": [
+          "Bounding shape, dominant curves, negative spaces, and scale relationships are explicitly described."
+        ],
+        "evidenceRefs": [
+          "full-object"
+        ],
+        "failureModes": [
+          "model reads as a generic placeholder instead of the reference object",
+          "major proportions are guessed without evidence"
+        ]
+      },
+      {
+        "id": "primary-structure",
+        "name": "Primary structure and hierarchy",
+        "required": true,
+        "qualityCriteria": [
+          "Major parts, joints, seams, contact points, and parent-child relationships are named before code generation."
+        ],
+        "evidenceRefs": [
+          "full-object"
+        ],
+        "failureModes": [
+          "large visible parts are merged into one mesh",
+          "component hierarchy is too shallow for the observed complexity"
+        ]
+      },
+      {
+        "id": "attachment-joint-correctness",
+        "name": "Attachment and joint correctness",
+        "required": true,
+        "qualityCriteria": [
+          "Every visible child appendage, branch, limb, handle, connector, tube, cable, horn, wing, leg, or hinged part has an attachment contract with parent socket, localStart/localEnd, contact type, embed/overlap, and gap tolerance."
+        ],
+        "evidenceRefs": [
+          "full-object"
+        ],
+        "failureModes": [
+          "child part root floats away from the parent",
+          "branch/limb/tube is centered in space instead of pivoting from its root",
+          "parent-child transform mixes world and local coordinates"
+        ]
+      },
+      {
+        "id": "surface-material-response",
+        "name": "Surface material response",
+        "required": true,
+        "qualityCriteria": [
+          "Albedo zones, roughness, normal/bump/displacement intent, cavity dirt, edge wear, and local overrides are specified where visible.",
+          "Important materials define independent albedo, roughness, height/normal, and AO responses instead of reusing one texture for unrelated PBR channels.",
+          "Surface response is decomposed into macro, meso, and micro frequency bands with scale and amplitude tied to object scale."
+        ],
+        "evidenceRefs": [
+          "full-object"
+        ],
+        "failureModes": [
+          "surface looks like flat plastic",
+          "local material variation is missing or not tied to image evidence"
+        ]
+      },
+      {
+        "id": "reference-lookdev",
+        "name": "Reference color, material, and lighting response",
+        "required": true,
+        "qualityCriteria": [
+          "Material-pass names the reference-derived albedo palette, roughness variation, tactile normal/bump/displacement response, and local masks.",
+          "When a source image is available, run reference PBR extraction and require confidence >= 0.7 before treating maps as implementation-ready.",
+          "Lighting-pass names key/fill/rim or environment light, exposure, tone mapping, background, and contact shadow behavior.",
+          "Neutral, grazing-angle, and reference-matched renders prove that surface relief survives relighting and is not painted into albedo."
+        ],
+        "evidenceRefs": [
+          "full-object"
+        ],
+        "failureModes": [
+          "model has acceptable shape but reads as flat shaded or plastic",
+          "colors are a generic average instead of reference-observed local color zones",
+          "lighting is evenly ambient and cannot reproduce the source value range"
+        ]
+      }
+    ],
+    "visualDeltaChecks": [
+      "silhouette and negative-space delta",
+      "component hierarchy depth delta",
+      "repetition density and distribution delta",
+      "material albedo/roughness/normal response delta",
+      "local feature placement and scale delta"
+    ],
+    "antiShallowSpecRules": [
+      "Do not proceed to code if qualityContract.qualityBar is unassessed.",
+      "Do not proceed to code if the spec only contains a root component for a moderate or complex object.",
+      "Do not proceed to code if required featureGroups are not represented by componentTree, materials, or repetitionSystems.",
+      "Do not proceed to code if visible local features are described only in prose and not attached to components/materials/evidenceRefs.",
+      "Do not proceed past structural-pass if attached child parts lack attachment.parentSocket, localStart, localEnd, embedDepth/overlap, and gapTolerance.",
+      "Do not pass material look-dev when albedo is reused as roughness, height, normal, or AO.",
+      "Do not pass material look-dev without macro, meso, and micro surface frequency bands for close-up materials.",
+      "Do not pass reference-fidelity material look-dev from a source image without usable referencePbr maps or an explicit documented limitation.",
+      "Do not patch a spec with extracted PBR maps when extraction confidence is below the target threshold unless the user explicitly accepts lower fidelity.",
+      "Do not place adjacent separate-geometry parts below 0.02 world-unit seam overlap (source: grimoire/build/geometry_patterns.md).",
+      "Do not satisfy raised or recessed relief, fasteners, or grip structure with a map alone when the feature affects form; use geometry or displacement (source: grimoire/build/geometry_patterns.md)."
+    ]
+  },
+  "authoringInstruction": "Fill observed object class, complexity reasoning, featureGroups, visualDeltaChecks, and unknowns before generating or implementing ObjectSculptSpec.",
+  "localSpecSearch": {
+    "collection": "core_3d",
+    "query": "Vent Baja 50 Dirt Bike spoked wheel knobby tyre gloss plastic bodywork anodized gold fork tube tube frame swingarm",
+    "index": {
+      "status": "rebuilt",
+      "reason": "missing",
+      "fingerprint": "62f2831e1d52eeb6dbb94a87c44fa25b1f4926626a7b1f8c2bcadc63e04e9471"
+    },
+    "matches": [
+      {
+        "record_id": "core.shader-mapping-boxgeometry-slides-receivers-grips",
+        "file_path": "docs/raw/img2threejs-skill-dataset.json",
+        "heading": null,
+        "key_path": "categories.rendering_shader_mapping[5]",
+        "score": 3.982060806801,
+        "snippets": [
+          "... các cụm lắp ráp hình chữ nhật/khối. Recognition cues: Flat-faced, roughly rectangular volume (pistol slide, receiver/frame, grip, panel) Dấu hiệu nhận diện: Khối gần chữ nhật với các mặt phẳng (khóa nòng súng lục, thân/khung súng, tay ..."
+        ],
+        "source_refs": [
+          {
+            "path": "docs/raw/img2threejs-skill-dataset.json",
+            "heading": null,
+            "key_path": "categories.rendering_shader_mapping[5]"
+          }
+        ],
+        "evidence_refs": [
+          {
+            "kind": "source",
+            "ref": "docs/raw/img2threejs-skill-dataset.json",
+            "note": "img2threejs NotebookLM research distillation"
+          }
+        ]
+      },
+      {
+        "record_id": "core.shader-mapping-torusgeometry-rings-loops",
+        "file_path": "docs/raw/img2threejs-skill-dataset.json",
+        "heading": null,
+        "key_path": "categories.rendering_shader_mapping[8]",
+        "score": 3.401965238705,
+        "snippets": [
+          "... Talon knife, trigger guard loop, carrying handle Dấu hiệu nhận diện: Chi tiết vòng tròn — vòng cán lưỡi lê, vòng ngón tay trên dao Talon, vòng vành bảo vệ cò, tay xách Three.js target: TorusGeometry(radius, tube, radialSegments, tubularSegments)"
+        ],
+        "source_refs": [
+          {
+            "path": "docs/raw/img2threejs-skill-dataset.json",
+            "heading": null,
+            "key_path": "categories.rendering_shader_mapping[8]"
+          }
+        ],
+        "evidence_refs": [
+          {
+            "kind": "source",
+            "ref": "docs/raw/img2threejs-skill-dataset.json",
+            "note": "img2threejs NotebookLM research distillation"
+          }
+        ]
+      },
+      {
+        "record_id": "core.shader-mapping-cylindergeometry-barrels-round-components",
+        "file_path": "docs/raw/img2threejs-skill-dataset.json",
+        "heading": null,
+        "key_path": "categories.rendering_shader_mapping[4]",
+        "score": 3.206244668833,
+        "snippets": [
+          "... Recognition cues: Long uniform-cross-section round part (barrel, suppressor, muzzle brake body, cleaning rod, magazine tube) Dấu hiệu nhận diện: Bộ phận tròn có tiết diện đều dài (nòng súng, ống giảm thanh, thân bù giật, cần thông nòng, ..."
+        ],
+        "source_refs": [
+          {
+            "path": "docs/raw/img2threejs-skill-dataset.json",
+            "heading": null,
+            "key_path": "categories.rendering_shader_mapping[4]"
+          }
+        ],
+        "evidence_refs": [
+          {
+            "kind": "source",
+            "ref": "docs/raw/img2threejs-skill-dataset.json",
+            "note": "img2threejs NotebookLM research distillation"
+          }
+        ]
+      }
+    ]
+  }
+}

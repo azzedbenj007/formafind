@@ -1,0 +1,14 @@
+{
+  "admitted": true,
+  "reasons": [],
+  "provenance": {
+    "viewpoint": "rear-left-3q",
+    "sourcePath": "/home/user/formafind/models/vent-baja/reference.jpg",
+    "width": 1280,
+    "height": 853,
+    "foregroundCoverage": 0.2646,
+    "largestComponentFraction": 1.0,
+    "pHash": 12573668897485508848,
+    "duplicateOfHash": null
+  }
+}

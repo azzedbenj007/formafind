@@ -1,0 +1,10 @@
+# regenerable / bulky working files
+zones/
+wtest/
+wt2/
+wtest*.json
+err.txt
+material-evidence/
+object-sculpt-spec.prev.json
+review/*/
+starter-spec.json
